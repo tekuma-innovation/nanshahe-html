@@ -1,0 +1,1708 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>认识南沙河</title>
+<style>
+:root{--bg:#f4f1e9;--paper:#fbfaf5;--ink:#1b241f;--muted:#687168;--line:#d9ddd6;--river:#5d94a3;--deep:#274f59;--green:#526c57;--green2:#2e4535;--sand:#c8b997;--rust:#9b5b46;--shadow:0 18px 60px rgba(23,33,27,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 82% 6%,rgba(93,148,163,.12),transparent 26%),radial-gradient(circle at 8% 30%,rgba(82,108,87,.10),transparent 24%),var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;line-height:1.75}.shell{max-width:1900px;margin:auto;padding:24px 28px 90px}.nav{transition:opacity .3s ease,transform .3s ease}
+.nav.nh{opacity:0;pointer-events:none;transform:translateY(-8px)}
+.nav{position:sticky;top:12px;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:11px 15px;background:rgba(251,250,245,.9);backdrop-filter:blur(12px);border:1px solid var(--line);border-radius:15px;box-shadow:0 8px 30px rgba(24,31,27,.05)}.brand{font-weight:760;font-size:14px}.nav a{text-decoration:none;color:var(--muted);font-size:12px;margin-left:9px}.hero{margin-top:18px;border-radius:28px;padding:64px 58px 48px;background:linear-gradient(120deg,rgba(24,47,42,.97),rgba(39,79,89,.9) 60%,rgba(93,148,163,.72));color:#fff;display:flex;flex-direction:column;justify-content:space-between;box-shadow:var(--shadow);overflow:hidden}.hero-row{display:flex;align-items:center;gap:40px;width:100%}.hero-toc{margin-left:auto;min-width:330px;display:flex;flex-direction:column}.hero-toc a{display:flex;align-items:baseline;gap:14px;padding:13px 6px;border-top:1px solid rgba(255,255,255,.2);color:#fff;text-decoration:none;transition:background .2s}.hero-toc a:last-child{border-bottom:1px solid rgba(255,255,255,.2)}.hero-toc a:hover{background:rgba(255,255,255,.07)}.hero-toc .t-num{font-size:13px;font-weight:800;color:rgba(255,255,255,.6);letter-spacing:.08em}.hero-toc .t-ti{font-size:20px;font-weight:700;letter-spacing:.04em}.hero-toc .t-en{margin-left:auto;font-size:10px;letter-spacing:.14em;color:rgba(255,255,255,.45)}@media(max-width:920px){.hero-row{flex-direction:column;align-items:flex-start;gap:22px}.hero-toc{margin-left:0;width:100%;min-width:0}}.eyebrow,.kicker{font-size:12px;letter-spacing:.17em;text-transform:uppercase;font-weight:760}.eyebrow{opacity:.68}.hero h1{font-size:clamp(52px,9vw,108px);line-height:.95;letter-spacing:-.045em;margin:20px 0 18px}.hero .deck{font-size:21px;max-width:760px;opacity:.92}.hero-bottom{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:end}.hero-note{font-size:14px;opacity:.7}.chips{display:flex;gap:7px;justify-content:flex-end;flex-wrap:wrap}.chip{border:1px solid rgba(255,255,255,.28);padding:6px 10px;border-radius:99px;font-size:12px;background:rgba(255,255,255,.06)}.section{margin-top:26px;background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:34px 36px;box-shadow:0 10px 36px rgba(30,40,34,.035)}h2{font-size:34px;line-height:1.15;letter-spacing:-.025em;margin:5px 0 16px}.section>.lead{font-size:19px;color:#334039;max-width:930px}.muted{color:var(--muted)}.quote{margin-top:22px;padding:22px 24px;border-radius:18px;background:linear-gradient(135deg,#eaf0ea,#edf3f5);border-left:4px solid var(--deep);font-size:21px;line-height:1.55}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}.card{grid-column:span 4;background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px}.card.wide{grid-column:span 6}.card.full{grid-column:span 12}.card .num{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--deep);font-weight:800;margin-bottom:7px}.card h3{font-size:19px;margin:0 0 6px}.card p{font-size:14px;color:var(--muted);margin:0}.river{margin:26px 0 4px}.riverline{height:10px;border-radius:99px;background:linear-gradient(90deg,#768a6c,#6f9c91 43%,#5d94a3 72%,#3e6974)}.stages{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}.stage{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}.stage b{display:block;font-size:17px;margin-bottom:3px}.stage small{color:var(--muted)}.label{display:inline-block;color:white;font-size:11px;border-radius:99px;padding:3px 8px;margin-bottom:8px}.stage:nth-child(1) .label{background:#71836b}.stage:nth-child(2) .label{background:#719c98}.stage:nth-child(3) .label{background:#4f7682}.compare{display:grid;grid-template-columns:1fr 1fr;gap:16px}.panel{border:1px solid var(--line);border-radius:18px;padding:22px;background:#fff}.panel.good{background:#eef3ee}.panel.issue{background:#f5efea}.panel h3{margin:0 0 8px}.panel ul{margin:8px 0 0;padding-left:20px}.timeline{margin-top:8px}.item{display:grid;grid-template-columns:165px 1fr;gap:18px;padding:17px 0;border-top:1px solid var(--line)}.item:first-child{border-top:0}.name{font-weight:760;color:var(--green2)}.role{font-size:13px;color:var(--muted)}.idea{font-size:15px}.statement{padding:34px;border-radius:22px;background:#20362f;color:#fff;display:grid;grid-template-columns:.72fr 1.28fr;gap:30px}.statement .big{font-size:42px;line-height:1.05;letter-spacing:-.03em;font-weight:780}.statement em{font-style:normal;color:#b5d0d7}.statement p{margin:0 0 12px;opacity:.87}.steps{counter-reset:n}.step{display:grid;grid-template-columns:48px 1fr;gap:14px;padding:17px 0;border-top:1px solid var(--line)}.step:first-child{border-top:0}.step:before{counter-increment:n;content:counter(n,decimal-leading-zero);width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--deep);color:#fff;font-size:12px;font-weight:800}.step b{display:block;margin-bottom:3px}.footer{padding:28px 5px 0;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.section-number{font-size:12px;color:var(--green);letter-spacing:.16em;text-transform:uppercase;font-weight:800}
+.hist{display:block;margin-top:10px;padding-top:10px;border-top:1px dashed var(--line);color:var(--muted);font-size:13.5px;line-height:1.7}.hist i{display:block;font-style:normal;font-size:11px;letter-spacing:.15em;color:var(--deep);font-weight:800;margin-bottom:4px}
+@media(max-width:860px){.shell{padding:14px 12px 56px}.nav .links{display:none}.hero{padding:40px 24px 30px;min-height:66vh}.hero-bottom,.stages,.compare,.statement{grid-template-columns:1fr}.chips{justify-content:flex-start}.section{padding:25px 20px}.card,.card.wide{grid-column:span 12}.item{grid-template-columns:1fr}}
+@media print{body{background:#fff}.shell{max-width:none;padding:0}.nav{display:none}.hero,.section{box-shadow:none;break-inside:avoid}.hero{min-height:auto}}
+/* water system interactive map */
+.wmap{position:relative;margin:22px 0 0;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.wmap>img{width:100%;display:block}
+.wpt{position:absolute;width:26px;height:26px;margin:-13px 0 0 -13px;border-radius:50%;border:2px solid #fbfaf5;background:#274f59;color:#fbfaf5;font-size:12px;font-weight:700;line-height:1;cursor:pointer;box-shadow:0 1px 5px rgba(20,30,26,.35);transition:transform .15s ease,background .15s ease;z-index:2}
+.wpt:hover{transform:scale(1.18);background:#9b5b46}
+.wpt.on{background:#9b5b46;transform:scale(1.18)}
+.wpt.red{background:#b5432f}
+.wpt.red:hover{background:#a03a28;transform:scale(1.18)}
+.wpt.red.on{background:#a03a28;transform:scale(1.18)}
+.wlg{position:absolute;right:10px;bottom:10px;z-index:2;background:rgba(251,250,245,.92);border:1px solid #d9ddd6;border-radius:8px;padding:7px 11px;font-size:11.5px;line-height:1.9;color:#3c453e;box-shadow:0 4px 14px rgba(27,36,31,.12)}
+.wlg i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+.spt{position:absolute;width:26px;height:26px;margin:-13px 0 0 -13px;border-radius:50%;border:2px solid #fbfaf5;background:#274f59;color:#fbfaf5;font-size:11px;font-weight:700;cursor:pointer;box-shadow:0 1px 5px rgba(20,30,26,.35);transition:transform .15s ease,background .15s ease;z-index:2;display:flex;align-items:center;justify-content:center;padding:0}
+.spt:hover{transform:scale(1.18);background:#9b5b46}
+.spt.on{background:#9b5b46;transform:scale(1.18)}
+.spt.nodata{cursor:default}
+.spt.nodata:hover{transform:none;background:#274f59}
+.scard{left:1.5%;top:auto;bottom:2%;width:46%;max-height:94%;overflow-y:auto;background:#f6f1e7;padding:20px 22px 10px;border-radius:12px}
+.sc-kicker{font-size:10px;letter-spacing:.12em;color:#8a8f85;margin-bottom:5px}
+.sc-title{font-size:20px;font-weight:700;color:#1b241f;margin-bottom:12px;line-height:1.3}
+.sc-num{color:#9b5b46;margin-right:8px}
+.sc-body{display:flex;gap:16px;align-items:flex-start}
+.sc-tx{flex:1 1 44%;min-width:0}
+.sc-ph{flex:1 1 56%;min-width:0}
+.sc-foot{display:flex;justify-content:space-between;border-top:1px solid #ddd8cb;margin-top:14px;padding-top:6px;font-size:9.5px;color:#98a094;letter-spacing:.06em}
+.echip{position:absolute;transform:translate(-50%,-50%);border-radius:999px;padding:.4em 1em;color:#fff;font-weight:700;font-size:clamp(9px,.95vw,14px);border:2px solid rgba(255,255,255,.85);cursor:pointer;box-shadow:0 2px 8px rgba(20,30,26,.25);white-space:nowrap;z-index:2;transition:transform .15s ease}
+.echip:hover{transform:translate(-50%,-50%) scale(1.08)}
+@media (max-width:900px){.scard{width:92%}.sc-body{flex-direction:column}}
+@media (max-width:900px){}
+
+.sc-desc{font-size:12px;line-height:1.75;color:#3c453e;margin:0 0 6px}
+.sc-sub{font-size:11px;font-weight:700;color:#274f59;margin:10px 0 4px;letter-spacing:.06em}
+.sc-ul{margin:0;padding-left:16px;font-size:12px;line-height:1.7;color:#3c453e}
+.sc-obs{font-size:12px;line-height:1.75;color:#687168;border-left:2px solid #d9ddd6;padding-left:8px;margin:0}
+.sc-main{width:100%;display:block;border-radius:6px}
+.sc-row{display:flex;gap:6px;margin-top:6px;flex-wrap:wrap;align-items:flex-start}
+.sc-row img{height:100px;width:auto;display:block;border-radius:6px}
+.wcard{position:absolute;background:#fbfaf5;border:1px solid #d9ddd6;border-radius:10px;box-shadow:0 10px 28px rgba(27,36,31,.18);padding:8px;z-index:3;display:none}
+.wcard.on{display:block}
+.wcard .wc-tri{position:absolute;top:-9px;width:0;height:0;border-left:8px solid transparent;border-right:8px solid transparent;border-bottom:9px solid #274f59}
+.wcard .wc-head{display:flex;align-items:flex-start;gap:7px;margin-bottom:7px}
+.wcard .wc-chip{flex:none;width:22px;height:22px;border-radius:5px;background:#274f59;color:#fbfaf5;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.wcard .wc-title{font-size:12px;font-weight:600;color:#1b241f;line-height:1.5}
+.wcard .wc-en{font-size:10px;color:#687168;line-height:1.4;margin-top:1px}
+.wc-ph{display:flex;gap:8px;margin-top:5px}
+.wc-ph img{width:50%;min-width:0;display:block;border-radius:6px}
+.wcard .wc-x{position:absolute;top:5px;right:6px;width:20px;height:20px;border:0;border-radius:50%;background:rgba(27,36,31,.08);color:#3c453e;font-size:13px;line-height:1;cursor:pointer}
+.wcard .wc-x:hover{background:rgba(155,91,70,.18)}
+.wmap-hint{font-size:12px;color:var(--muted);margin-top:10px}
+
+.sum-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:8px}
+.sum-card{border-radius:18px;padding:26px 28px;border:1px solid var(--line)}
+.sum-card.keep{background:#eef3f0}
+.sum-card.gap{background:#f7f1e4}
+.sum-card h3{margin:0 0 14px;font-size:19px;letter-spacing:.02em;color:#1b241f}
+.sum-card.keep h3{color:var(--deep)}
+.sum-card ul{margin:0;padding:0;list-style:none}
+.sum-card li{position:relative;padding:7px 0 7px 18px;font-size:15.5px;line-height:1.75;color:#334039}
+.sum-card li::before{content:'';position:absolute;left:0;top:16px;width:7px;height:7px;border-radius:50%}
+.sum-card.keep li::before{background:var(--deep)}
+.sum-card.gap li::before{background:var(--rust)}
+.sum-card li strong{color:#1b241f}
+.sum-bar{margin-top:18px;background:#e9f0f1;border-left:5px solid var(--river);border-radius:14px;padding:20px 26px;font-size:18.5px;line-height:1.8;color:#22302b}
+.sum-bar strong{color:var(--deep)}
+@media(max-width:900px){.sum-grid{grid-template-columns:1fr}}
+
+@keyframes pulse-n{0%{box-shadow:0 0 0 0 rgba(39,79,89,.5),0 1px 5px rgba(20,30,26,.35)}70%{box-shadow:0 0 0 14px rgba(39,79,89,0),0 1px 5px rgba(20,30,26,.35)}100%{box-shadow:0 0 0 0 rgba(39,79,89,0),0 1px 5px rgba(20,30,26,.35)}}
+@keyframes pulse-r{0%{box-shadow:0 0 0 0 rgba(181,67,47,.5),0 1px 5px rgba(20,30,26,.35)}70%{box-shadow:0 0 0 14px rgba(181,67,47,0),0 1px 5px rgba(20,30,26,.35)}100%{box-shadow:0 0 0 0 rgba(181,67,47,0),0 1px 5px rgba(20,30,26,.35)}}
+@keyframes pulse-w{0%{box-shadow:0 0 0 0 rgba(255,255,255,.55),0 2px 8px rgba(20,30,26,.25)}70%{box-shadow:0 0 0 12px rgba(255,255,255,0),0 2px 8px rgba(20,30,26,.25)}100%{box-shadow:0 0 0 0 rgba(255,255,255,0),0 2px 8px rgba(20,30,26,.25)}}
+.wpt{animation:pulse-n 2.4s ease-out infinite}
+.wpt.red{animation-name:pulse-r}
+.spt:not(.nodata){animation:pulse-n 2.4s ease-out infinite}
+.echip{animation:pulse-w 2.4s ease-out infinite}
+.wpt.on,.spt.on,.echip.on{animation:none}
+.wmap-hint{font-size:13px !important;color:#41504a !important;border-left:3px solid var(--river);padding-left:10px}
+
+.divider{margin-top:26px;border-radius:28px;padding:110px 58px;background:linear-gradient(120deg,rgba(24,47,42,.97),rgba(39,79,89,.9) 60%,rgba(93,148,163,.72));color:#fff;box-shadow:var(--shadow);overflow:hidden}
+.divider .eyebrow{opacity:.68}
+.divider-title{font-size:clamp(44px,7vw,84px);line-height:1;letter-spacing:-.03em;margin:16px 0 0;color:#fff}
+@keyframes pulse-y{0%{box-shadow:0 0 0 0 rgba(209,165,70,.55),0 1px 5px rgba(20,30,26,.35)}70%{box-shadow:0 0 0 14px rgba(209,165,70,0),0 1px 5px rgba(20,30,26,.35)}100%{box-shadow:0 0 0 0 rgba(209,165,70,0),0 1px 5px rgba(20,30,26,.35)}}
+@keyframes pulse-h{0%{box-shadow:0 0 0 0 rgba(227,197,60,.55),0 1px 5px rgba(20,30,26,.35)}70%{box-shadow:0 0 0 14px rgba(227,197,60,0),0 1px 5px rgba(20,30,26,.35)}100%{box-shadow:0 0 0 0 rgba(227,197,60,0),0 1px 5px rgba(20,30,26,.35)}}
+.spt.yellow{background:#d1a546;animation-name:pulse-y}
+.spt.house{background:#e3c53c;color:#5a4d12;animation-name:pulse-h}
+.spt.yellow:hover{background:#c2952f}
+@keyframes pulse-g{0%{box-shadow:0 0 0 0 rgba(131,171,101,.55),0 1px 5px rgba(20,30,26,.35)}70%{box-shadow:0 0 0 14px rgba(131,171,101,0),0 1px 5px rgba(20,30,26,.35)}100%{box-shadow:0 0 0 0 rgba(131,171,101,0),0 1px 5px rgba(20,30,26,.35)}}
+.spt.red{background:#b5432f;animation-name:pulse-r}
+.spt.red:hover{background:#a03a28}
+.spt.green{background:#83ab65;animation-name:pulse-g}
+@media(max-width:900px){.spt{width:15px;height:15px;margin:-7.5px 0 0 -7.5px;font-size:8.5px;border-width:1.5px}.spt.on{transform:scale(1.12)}}
+@media(max-width:560px){.spt{width:12px;height:12px;margin:-6px 0 0 -6px;font-size:7px;border-width:1px}}
+.spt.green:hover{background:#6f9652}
+
+.divider-title .dv-num{color:rgba(255,255,255,.85);font-size:.42em;font-weight:800;margin-right:.18em;letter-spacing:0}.divider .dv-sub{margin-top:22px;font-size:clamp(17px,2vw,24px);color:rgba(255,255,255,.88);letter-spacing:.05em;font-weight:500}
+
+.media-layout{display:grid;grid-template-columns:1fr 1.05fr;gap:26px;align-items:start;margin:24px 0 16px}
+.media-box{background:#1a2321;border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:0 8px 24px rgba(0,0,0,.08)}
+.media-box img{width:100%;height:auto;display:block}
+.fig-caption{padding:12px 18px;background:#202c29;color:#b6c6bf;font-size:12.5px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid rgba(255,255,255,.08)}#kbhint{position:fixed;right:16px;bottom:14px;z-index:20;font-size:11px;letter-spacing:.08em;color:#8a948e;background:rgba(251,250,245,.85);border:1px solid var(--line);padding:4px 10px;border-radius:999px;pointer-events:none;backdrop-filter:blur(6px)}
+.side-stack{display:flex;flex-direction:column;gap:14px}
+.side-stack .card{padding:18px 20px}
+.elements{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 6px}
+.element-tag{padding:6px 14px;border-radius:8px;font-size:13px;font-weight:700;display:inline-flex;align-items:center;gap:6px}
+.tag-palace{background:#fdf2ec;color:var(--rust);border:1px solid #ebd7cc}
+.tag-farm{background:#fbf7e8;color:#8a7032;border:1px solid #e8dec0}
+.tag-mountain{background:#eef3ee;color:var(--green2);border:1px solid #c9d8cb}
+.tag-wetland{background:#eaf2f5;color:var(--deep);border:1px solid #c4dbe1}
+.tag-village{background:#f4f0eb;color:#6b5f54;border:1px solid #ded5ca}
+.wide-media-box{margin:24px 0 18px;background:#1a2321;border-radius:20px;overflow:hidden;border:1px solid var(--line);box-shadow:0 10px 30px rgba(0,0,0,.10)}
+.wide-media-box img{width:100%;height:auto;display:block}
+@media(max-width:920px){.media-layout{grid-template-columns:1fr}}
+
+.nav .links{overflow-x:auto;white-space:nowrap;scrollbar-width:none;margin-left:18px}.nav .links::-webkit-scrollbar{display:none}.nav .links a{margin-left:12px !important;display:inline-block}
+
+.wide-media-box svg{width:100%;height:auto;display:block}
+
+/* ================= editorial reskin ================= */
+:root{--ink:#151614;--paper:#f6f3ed;--muted:#79766f;--line:rgba(21,22,20,.16);--accent:#274f59}
+body{background:var(--paper);color:var(--ink);font-family:Inter,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;font-size:15.5px;line-height:1.8;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+::selection{background:#274f59;color:#f6f3ed}
+.shell{max-width:1760px}
+.nav{background:rgba(246,243,237,.85);border:1px solid var(--line);border-radius:999px;box-shadow:none;padding:10px 22px}
+.brand{font-weight:700;font-size:13px;letter-spacing:.03em}
+.nav a{color:var(--muted);font-size:11.5px;letter-spacing:.05em}
+.nav a:hover{color:var(--ink)}
+.hero{background:#151614;border-radius:20px;box-shadow:none;padding:80px 66px 56px}
+.hero .eyebrow,.divider .eyebrow{opacity:1;color:#8faeba;font-size:11px;letter-spacing:.26em;font-weight:700}
+.hero h1{font-weight:700;letter-spacing:-.06em;font-size:clamp(64px,8.6vw,150px);line-height:.98}
+.hero .deck{font-size:clamp(15px,1.15vw,19px);color:rgba(246,243,237,.72);max-width:640px;font-weight:400;line-height:1.85}
+.hero-note{color:rgba(246,243,237,.45);font-size:12px;letter-spacing:.06em}
+.chip{border:1px solid rgba(246,243,237,.22);background:transparent;color:rgba(246,243,237,.75);font-size:11.5px;letter-spacing:.04em}
+.hero-toc a{border-top:1px solid rgba(246,243,237,.16);padding:15px 2px}
+.hero-toc a:last-child{border-bottom:1px solid rgba(246,243,237,.16)}
+.hero-toc a:hover{background:rgba(246,243,237,.05)}
+.hero-toc .t-num{color:#7fa3b0;font-weight:700;font-size:11px;letter-spacing:.12em}
+.hero-toc .t-ti{font-weight:600;letter-spacing:.01em;font-size:19px}
+.hero-toc .t-en{color:rgba(246,243,237,.38);letter-spacing:.18em}
+.divider{background:#151614;border-radius:20px;box-shadow:none;padding:13vh 66px}
+.divider-title{font-weight:680;letter-spacing:-.05em;font-size:clamp(46px,5.6vw,100px)}
+.divider-title .dv-num{color:#7fa3b0;font-weight:700}
+.divider .dv-sub{color:rgba(246,243,237,.6);font-weight:400;letter-spacing:.02em}
+.section{margin-top:0;background:transparent;border:none;border-top:1px solid var(--line);border-radius:0;box-shadow:none;padding:9vh 0 7vh}
+.section-number{color:var(--accent);font-size:11px;letter-spacing:.26em;font-weight:700}
+h2{font-size:clamp(30px,3vw,52px);letter-spacing:-.045em;font-weight:640;line-height:1.08;margin:10px 0 18px}
+.section>.lead{font-size:clamp(15.5px,1.05vw,18.5px);color:#55534c;max-width:880px;line-height:1.9}
+h3{letter-spacing:-.015em}
+.card{background:transparent;border:none;border-left:0 !important;border-top:1px solid var(--line);border-radius:0;box-shadow:none;padding:22px 8px 22px 0}
+.card .num{color:var(--accent);font-size:10.5px;letter-spacing:.22em;font-weight:700}
+.card h3{font-size:17.5px;font-weight:640}
+.card p{font-size:14px;color:var(--muted);line-height:1.8}
+.panel,.sum-card{background:transparent;border:none;border-top:1px solid var(--line);border-radius:0;padding:24px 6px}
+.panel.good,.panel.issue,.sum-card.keep,.sum-card.gap{background:transparent}
+.sum-card h3{font-weight:640;letter-spacing:-.01em}
+.sum-bar{background:transparent;border-left:3px solid var(--river);border-radius:0;padding:16px 0 16px 26px;font-size:17.5px;color:#33322e}
+.stage{background:transparent;border:none;border-top:1px solid var(--line);border-radius:0;padding:20px 6px}
+.quote{background:transparent;border-radius:0;border-left:3px solid var(--accent);padding:8px 0 8px 28px;font-size:clamp(19px,1.7vw,26px);letter-spacing:-.015em;line-height:1.65;color:#151614}
+.step:before{background:#151614;border-radius:50%}
+.statement{background:#151614;border-radius:20px;padding:48px 52px}
+.statement .big{font-weight:680;letter-spacing:-.035em}
+.statement em{color:#8fb7c4}
+.element-tag{background:transparent;border-radius:999px;font-weight:600}
+.media-box,.wide-media-box{background:transparent;border:1px solid var(--line);border-radius:14px;box-shadow:0 15px 55px rgba(35,32,25,.08)}
+.fig-caption{background:transparent;color:#79766f;border-top:1px solid var(--line);font-size:11.5px;letter-spacing:.06em;padding:12px 16px}
+.wmap{border:1px solid var(--line);border-radius:14px;box-shadow:0 15px 55px rgba(35,32,25,.08)}
+.footer{border-top:1px solid var(--line);margin-top:6vh;padding-top:26px;font-size:11.5px;letter-spacing:.05em}
+#kbhint{color:#79766f;background:rgba(246,243,237,.85);border:1px solid var(--line);border-radius:999px}
+#prog{position:fixed;left:0;bottom:0;height:3px;width:0;background:#274f59;z-index:60}
+@media(max-width:920px){.section{padding:7vh 0 5vh}.divider{padding:9vh 30px}.hero{padding:52px 30px 42px}}
+
+/* ================= editorial reskin · pass 2 (layout & color refinement) ================= */
+:root{--terra:#a05e45;--terra-lt:#d9a582;--ink2:#191b18}
+body{color:var(--ink2)}
+/* cover → light editorial, like ref cover-slide */
+.hero{background:#eae5d9;color:var(--ink);border:1px solid var(--line);border-radius:20px;padding:9vh 66px 7vh}
+.hero .eyebrow{color:var(--terra);font-size:11px;letter-spacing:.3em;font-weight:700;opacity:1}
+.hero h1{color:#151614;font-size:clamp(88px,10.5vw,190px);letter-spacing:-.085em;line-height:.96;font-weight:640;margin:2.2vh 0 0 -6px}
+.hero-row{align-items:flex-end;gap:64px}
+.hero-toc{min-width:360px;padding-bottom:6px}
+.hero-toc a{border-top:1px solid rgba(21,22,20,.22);color:#151614;padding:16px 2px}
+.hero-toc a:last-child{border-bottom:1px solid rgba(21,22,20,.22)}
+.hero-toc a:hover{background:rgba(21,22,20,.045)}
+.hero-toc .t-num{color:var(--terra);font-size:11px;font-weight:700;letter-spacing:.1em}
+.hero-toc .t-ti{font-size:21px;font-weight:600;letter-spacing:0}
+.hero-toc .t-en{color:rgba(21,22,20,.42);font-size:9.5px;letter-spacing:.2em}
+/* dark dividers → warmer ink, terracotta kicker, giant tight title */
+.divider{background:#171916;color:#f7f2e7;padding:15vh 66px}
+.divider .eyebrow{color:var(--terra-lt);letter-spacing:.3em;opacity:1}
+.divider-title{font-size:clamp(54px,6.4vw,118px);letter-spacing:-.055em;font-weight:640;line-height:1.02}
+.divider-title .dv-num{color:var(--terra-lt);font-weight:700}
+.divider .dv-sub{color:rgba(247,242,231,.58);font-size:clamp(16px,1.6vw,23px)}
+/* section header typography → ref mid-title / sublead */
+.section{padding:10vh 0 8vh}
+.section-number{color:var(--terra);font-size:11px;letter-spacing:.28em;font-weight:700}
+h2{font-size:clamp(32px,3.35vw,60px);letter-spacing:-.045em;font-weight:630;line-height:1.12;max-width:1250px}
+.section>.lead{font-size:clamp(16px,1.25vw,22px);line-height:1.75;color:#4c504a;max-width:960px}
+/* hairline items with terracotta index */
+.card .num{color:var(--terra);font-size:11px;letter-spacing:.16em;font-weight:680;margin-bottom:10px}
+.card h3{font-size:clamp(17px,1.35vw,24px);font-weight:630;letter-spacing:-.02em;line-height:1.3}
+.card p{color:#696b64;font-size:14px;line-height:1.8}
+.side-stack .card{padding:20px 8px 20px 0}
+.grid{gap:clamp(18px,1.8vw,30px)}
+/* quote & statement */
+.quote{border-left:3px solid var(--terra);font-size:clamp(19px,1.5vw,28px);letter-spacing:-.025em;font-weight:550}
+.statement{background:#171916;border-radius:20px}
+.statement .big{font-size:clamp(30px,2.6vw,46px);letter-spacing:-.04em;font-weight:640}
+.statement em{color:var(--terra-lt)}
+.sum-bar{border-left:3px solid var(--terra)}
+/* steps → refined rings */
+.step:before{background:transparent;border:1px solid rgba(21,22,20,.3);color:var(--terra);font-weight:700}
+/* images → muted grade, hairline cards, small caps captions */
+.media-box,.wide-media-box{border:1px solid var(--line);border-radius:6px;box-shadow:0 12px 40px rgba(35,32,25,.07);background:#efebe2}
+.media-box img,.wide-media-box img{filter:saturate(.86) contrast(1.02)}
+.fig-caption{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:#79766f;padding:10px 14px}
+.media-layout{gap:clamp(24px,3vw,48px)}
+/* progress & misc */
+#prog{background:var(--terra)}
+.footer{color:#79766f}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-thumb{background:#c9c3b4;border-radius:99px;border:3px solid #f6f3ed}
+::-webkit-scrollbar-track{background:transparent}
+@media(max-width:920px){.hero{padding:52px 30px 42px}.hero h1{font-size:clamp(64px,17vw,110px);margin-left:-3px}.hero-row{gap:26px}}
+
+/* ================= editorial reskin · pass 3 (deck-scale type & layout) ================= */
+body{font-size:16.5px;line-height:1.85}
+.shell{padding:24px 5vw 90px}
+/* section rhythm → slide-like air */
+.section{padding:12vh 0 10vh}
+.section-number{font-size:clamp(11px,.82vw,14px);letter-spacing:.26em}
+h2{font-size:clamp(38px,4vw,75px);font-weight:630;letter-spacing:-.045em;line-height:1.1;max-width:1320px;margin:14px 0 22px}
+.section>.lead{font-size:clamp(17px,1.35vw,24px);line-height:1.72;color:#4c504a;max-width:980px;margin-bottom:5.5vh}
+/* hairline items → shift-grid scale */
+.card{padding:26px 12px 26px 0}
+.card .num{font-size:12px;letter-spacing:.16em;margin-bottom:14px}
+.card h3{font-size:clamp(19px,1.55vw,30px);font-weight:630;letter-spacing:-.03em;line-height:1.28;margin:0 0 10px}
+.card p{font-size:clamp(14px,1.02vw,18px);line-height:1.78;color:#696b64}
+.side-stack{gap:clamp(14px,1.5vw,24px)}
+.side-stack .card{padding:24px 14px 24px 0}
+.grid{gap:clamp(22px,2.8vw,48px)}
+/* big statements */
+.quote{font-size:clamp(20px,1.6vw,30px);padding:12px 0 12px 32px;margin-top:5vh}
+.statement{padding:clamp(40px,4.5vw,72px)}
+.statement .big{font-size:clamp(34px,3.1vw,58px);letter-spacing:-.045em;line-height:1.12}
+.statement p{font-size:clamp(15px,1.1vw,19px);line-height:1.85}
+/* lists & panels */
+.panel,.sum-card{padding:28px 10px}
+.sum-card h3,.panel h3{font-size:clamp(19px,1.5vw,28px);font-weight:630;letter-spacing:-.02em;margin-bottom:16px}
+.sum-card li{font-size:clamp(15px,1.08vw,19px);line-height:1.8;padding:9px 0 9px 20px}
+.sum-bar{font-size:clamp(17px,1.4vw,25px);padding:20px 0 20px 32px;margin-top:3.5vh;letter-spacing:-.015em}
+.stage b{font-size:clamp(17px,1.3vw,24px)}
+.stage small{font-size:clamp(13px,.95vw,16px)}
+.item{grid-template-columns:200px 1fr;padding:22px 0;gap:24px}
+.name{font-size:clamp(16px,1.2vw,22px)}
+.role{font-size:clamp(12px,.92vw,15px)}
+.idea{font-size:clamp(14px,1.05vw,18px)}
+.step{grid-template-columns:64px 1fr;padding:22px 0;gap:20px}
+.step:before{width:46px;height:46px;font-size:14px}
+.step b{font-size:clamp(16px,1.2vw,22px)}
+.step p,.step{font-size:clamp(14px,1.02vw,18px)}
+.element-tag{font-size:clamp(13px,1vw,16px);padding:8px 18px}
+/* media → bigger, wider image column */
+.media-layout{grid-template-columns:1.18fr .82fr;gap:clamp(28px,3.8vw,64px);margin:5vh 0 3vh}
+.fig-caption{font-size:clamp(11px,.85vw,13px);letter-spacing:.12em;padding:12px 16px}
+.wide-media-box{margin:4.5vh 0 3.5vh}
+/* dividers & cover → bigger */
+.divider{padding:17vh 66px}
+.divider-title{font-size:clamp(60px,7.2vw,132px)}
+.divider .dv-sub{font-size:clamp(18px,1.8vw,27px);margin-top:3vh}
+.hero h1{font-size:clamp(100px,11.5vw,215px)}
+.hero-toc{min-width:400px}
+.hero-toc a{padding:19px 2px}
+.hero-toc .t-ti{font-size:clamp(20px,1.6vw,26px)}
+.hero-toc .t-num{font-size:12px}
+.hero-toc .t-en{font-size:10px}
+.nav a{font-size:12px}
+.footer{font-size:12px}
+@media(max-width:920px){.shell{padding:16px 20px 60px}.section{padding:8vh 0 6vh}.divider{padding:10vh 28px}.media-layout{grid-template-columns:1fr}.item{grid-template-columns:1fr;gap:6px}}
+</style>
+</head>
+<body>
+<div class="shell">
+<nav class="nav"><div class="brand">认识南沙河</div><div class="links"><a href="#loc1">水文溯源</a><a href="#loc2">海淀的水</a><a href="#basin">流域系统</a><a href="#loc3">复合界面</a><a href="#water">水系分析</a><a href="#environs">周边环境</a><a href="#survey">河畔锚点</a><a href="#summary">踏勘总结</a><a href="#case1">伊萨尔河</a><a href="#case3">鸭川</a><a href="#traits">五个特质</a><a href="#idea2">后花园</a><a href="#idea3">实验河</a><a href="#idea4">另一面</a><a href="#idea5">品牌选项</a><a id="fsbtn" title="进入 / 退出全屏（快捷键 F）">⛶ 全屏</a></div></nav>
+
+<header class="hero">
+  <div class="hero-row">
+    <div><div class="eyebrow">NANSHA RIVER</div><h1>认识<br>南沙河</h1></div>
+    <nav class="hero-toc">
+      <a href="#dv1"><span class="t-num">01</span><span class="t-ti">区位认知</span><span class="t-en">LOCATION &amp; CONTEXT</span></a>
+      <a href="#dv2"><span class="t-num">02</span><span class="t-ti">踏勘调研</span><span class="t-en">FIELD SURVEY</span></a>
+      <a href="#dv3"><span class="t-num">03</span><span class="t-ti">国际对标</span><span class="t-en">BENCHMARKS</span></a>
+      <a href="#dv4"><span class="t-num">04</span><span class="t-ti">定位认知总结</span><span class="t-en">BIG IDEA</span></a>
+    </nav>
+  </div>
+</header>
+
+<section class="divider" id="dv1">
+  <div class="eyebrow">LOCATION &amp; REGIONAL CONTEXT</div><h2 class="divider-title"><span class="dv-num">01 /</span>区位认知</h2>
+</section>
+
+<section class="section" id="loc1">
+  <div class="section-number">PAGE 01 / HYDROLOGICAL IDENTITY</div>
+  <h2>五大水系，唯有它生于北京</h2>
+
+  <!-- 图文混排区域（针对正方形宏观水系图） -->
+  <div class="media-layout">
+    <div class="media-box">
+      <img src="assets/img-01.png" alt="北京五大水系格局与南沙河水文区位分析图" />
+      <div class="fig-caption">
+        <span>图 01：北京五大水系格局与温榆河上游汇水关系</span>
+        <span>水系源流分析</span>
+      </div>
+    </div>
+    
+    <div class="side-stack">
+      <div class="card" style="border-left: 4px solid var(--deep);">
+        <div class="num">01 / 水系如何划分</div>
+        <h3>五大水系，四客一本</h3>
+        <p>北京有永定河、潮白河、北运河、大清河、蓟运河五大水系，前四者皆为跨省过境客水，唯有北运河上游的温榆河发源于本市。</p>
+      </div>
+      <div class="card" style="border-left: 4px solid var(--river);">
+        <div class="num">02 / 属于哪条水系</div>
+        <h3>温榆河上游三源流之一</h3>
+        <p>南沙河属北运河水系。温榆河有东沙河、北沙河、南沙河三条上游源流，南沙河是唯一从城区发源、横穿海淀山后平原的一条。</p>
+      </div>
+      <div class="card" style="border-left: 4px solid var(--green);">
+        <div class="num">03 / 最终汇入哪里</div>
+        <h3>沙河水库 → 温榆河 → 北运河</h3>
+        <p>南沙河东流汇入昌平沙河水库，与东沙河、北沙河合流后即为温榆河干流起点，最终经北运河入京杭大运河。</p>
+      </div>
+      <div class="card" style="border-left: 4px solid var(--rust);">
+        <div class="num">04 / 格局中的位置</div>
+        <h3>大运河北端源头 · 山后骨干大河</h3>
+        <p>河道全长约30.6公里，主河道自京密引水渠至海淀昌平界约16公里，发源于阳台山东麓寨口沟一带，是海淀山后唯一的骨干大河。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="quote">
+    不同于北京绝大多数过境客水，南沙河是京城唯一本土自生水系的核心源头，更是横贯海淀北部平原唯一的骨干生态大动脉。
+  </div>
+</section>
+
+<section class="section" id="loc2">
+  <div class="section-number">PAGE 02 / THE WATERS OF HAIDIAN</div>
+  <h2>海淀的水，南沙河有什么不同</h2>
+  <!-- 图文混排区域（针对海淀全境水系图） -->
+  <div class="media-layout">
+    <div class="media-box">
+      <img src="assets/img-02.jpg" alt="海淀区全域水网结构图" />
+      <div class="fig-caption">
+        <span>图 02：海淀区全域水网结构（南沙河、清河、长河、永引渠）</span>
+        <span>全境格局对比</span>
+      </div>
+    </div>
+
+    <div class="side-stack">
+      <div class="card" style="border-left: 4px solid var(--deep);">
+        <div class="num">01 / 水系梳理</div>
+        <h3>海淀有哪些水系</h3>
+        <p>万泉河——西山泉群之源，串联三山五园；清河——北部城市河道，排洪与亲水并重；京密引水渠——沿山前走行的输水干渠，南沙河主河道的起算点；长河——御河景观航道；永定河引水渠——人工输水排渠；南沙河——山后唯一的原生态平原大河。</p>
+      </div>
+      <div class="card" style="border-left: 4px solid var(--muted);">
+        <div class="num">02 / 山前及城区水系</div>
+        <h3>市政功能与园林秩序</h3>
+        <p>万泉河发源于西山泉群、串联“三山五园”；清河穿过北部高密度居住区，承担排洪与市民亲水；长河为御河景观航道；永引渠为人工输水排渠；京密引水渠沿山前走行，是南沙河主河道的起算点。</p>
+      </div>
+      <div class="card" style="border-left: 4px solid var(--green2);">
+        <div class="num">03 / 山后南沙河</div>
+        <h3>原真野性与生境极限</h3>
+        <p>上庄水库蓄滞水面、翠湖封闭保育区提供免受打扰的繁衍空间；京西稻田与芦苇荡互补，生态链完整度在海淀全境断层领先。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="quote">
+    清河承载生活，万泉河承载历史，长河与永引渠承载输水防汛；而唯有山后的南沙河，守住了海淀全区最原真、最不可再生的生态底盘。
+  </div>
+</section>
+
+<section class="section" id="basin">
+  <div class="section-number">PAGE 03 / THE NANSHA BASIN</div>
+  <h2>南沙河流域：一条完整的河</h2>
+  <div class="media-layout" style="align-items:center">
+    <div class="media-box">
+      <img src="assets/img-03.jpg" alt="南沙河流域及支流系统研究图" />
+      <div class="fig-caption">
+        <span>图 03：南沙河流域及支流系统研究图（卫星底图叠加水系与流域界）</span>
+        <span>流域系统</span>
+      </div>
+    </div>
+
+    <div class="side-stack">
+      <div class="card" style="border-left: 4px solid var(--deep);">
+        <div class="num">01 / 主干流与南北两支</div>
+        <h3>沙涧河 + 柳林河 → 南沙河</h3>
+        <p>北支沙涧河发源于上方寺、龙泉寺一带，南支柳林河源于管家岭，两支汇合后形成干流，东流入沙河水库。</p>
+      </div>
+      <div class="card" style="border-left: 4px solid var(--river);">
+        <div class="num">02 / 支流与排洪沟</div>
+        <h3>有名与无名的支流都整理出来</h3>
+        <p>叉河、妙峰沟、柳林河、三星庄后河、东埠头、屯佃、宏丰、五一、闫家洼、风格渠、十一排干等南北向支沟汇入主河道。</p>
+      </div>
+      <div class="card" style="border-left: 4px solid var(--green);">
+        <div class="num">03 / 流域边界</div>
+        <h3>依山脊与水系划定</h3>
+        <p>流域边界依西山山脊与山前水系划定，大觉寺、凤凰岭一带的山溪与支流直接汇入本流域。</p>
+      </div>
+      <div class="card" style="border-left: 4px solid var(--rust);">
+        <div class="num">04 / 园区与流域</div>
+        <h3>科技园区坐落在流域之上</h3>
+        <p>中关村科学城北区、永丰、环保园等园区与支流系统空间交织，流域研究直接面向项目范围。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="quote">
+    从源头、支流、主河道到汇流口，南沙河具备完整的流域结构。
+  </div>
+</section>
+
+<section class="section" id="loc3">
+  <div class="section-number">PAGE 04 / PROJECT AREA · HYBRID INTERFACE</div>
+  <h2>南沙河：高精尖产业轴与“文化·田园·山野·乡村”的复合界面</h2>
+
+  <!-- 横屏画卷展示框（针对南沙河廊道要素大长图） -->
+  <div class="media-layout" style="align-items:center">
+    <div class="media-box">
+    <img src="assets/img-04.jpg" alt="南沙河廊道生态要素与科创节点分布图" />
+    <div class="fig-caption">
+      <span>图 04：南沙河廊道生态要素（林地/农田/水面/村庄）与科创、文化节点分布图</span>
+      <span>复合界面空间落位</span>
+    </div>
+    </div>
+    <div class="side-stack">
+      <div class="card" style="border-left: 4px solid var(--deep);">
+        <div class="num">01 / 与大西山的关系</div>
+        <h3>山后四镇环抱的滨水界面</h3>
+        <p>西山永定河文化带是北京总规确定的三条文化带之一，全长约90公里、各级文保单位400余处。南沙河正处海淀“大西山绿色生态文化带”的山前地带，西北旺、温泉、上庄、苏家坨四镇环河展开，河道是山与城之间最完整的一条滨水界面。</p>
+      </div>
+      <div class="card" style="border-left: 4px solid var(--river);">
+        <div class="num">02 / 与“西山画屏”的关系</div>
+        <h3>“画屏”之前的第一重水岸</h3>
+        <p>海淀绿色空间结构以“西山画屏、两心为核、绿廊贯穿、绿链织园”为骨架，“一屏”即海拔100米以上的西山生态屏障。南沙河自画屏脚下引水东去，是这道画屏向平原展开时遇到的第一条东西向水廊。</p>
+      </div>
+      <div class="card" style="border-left: 4px solid var(--green);">
+        <div class="num">03 / 与山前文化资源的关系</div>
+        <h3>寺、泉、园、陵沿山成串</h3>
+        <p>山前分布凤凰岭、阳台山、鹫峰与大觉寺、七王坟、莲花寺、普照寺、贝家花园、龙泉寺等资源，仅苏家坨一镇就有物质文化遗产82处；大觉寺始建于辽，为金章宗“西山八大水院”之清水院。南沙河的山前支沟，正从这片文化带中发源流出。</p>
+      </div>
+      <div class="card" style="border-left: 4px solid var(--rust);">
+        <div class="num">04 / 与科技园区、村镇、故宫北院的关系</div>
+        <h3>园区、村落与“宫”在一河上相遇</h3>
+        <p>南岸是中关村科学城北区、永丰、环保园等创新极核；北岸保留常乐、李家坟、台头等原生村落；故宫博物院北院区落址南岸，预计2027年开放，年展出量可达本院2–3倍。科技园区、原生村镇与国家级文化锚点叠合在同一河段，是本项目最独特的资源条件。</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="section" id="loc5">
+  <div class="section-number">PAGE 05 / BASELINE &amp; RESHAPING</div>
+  <h2>南沙河界面两侧：生态本底与空间重塑</h2>
+  <div class="grid">
+    <div class="card wide">
+      <div class="num">南侧与腹地 / FAST BRAIN</div>
+      <h3>全球硬核科创与高密度创新极</h3>
+      <p>紧邻中关村科学城北区、永丰产业基地、环保园与协同创新基地。数十万从事基础科学、人工智能、高新技术研发的高知脑力人群在此集聚，代表着海淀甚至北京最高的产业智力密度与飞快运转的创新节奏。</p>
+    </div>
+    <div class="card wide">
+      <div class="num">河道及北岸腹地 / SLOW &amp; DEEP LIFE</div>
+      <h3>山野、田园、湿地与乡村本底</h3>
+      <p>保留着海淀最为连片的农业文化遗产——京西稻田，西山脚下的凤凰公社、野武花园等主理人乡村业态，以及常乐古村、李家坟等历史村落。这里维系着四时农耕节气、村落烟火与大尺度水网林地的沉静秩序。</p>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="num">生态本底 01 / 候鸟黄金驿站</div>
+      <h3>287种鸟类栖息地</h3>
+      <p>地处东亚—澳大利西亚迁飞线上，记录鸟类达287种，涵盖极危物种黄胸鹀、青头潜鸭、大天鹅等国家一二级重点保护野生动物。</p>
+    </div>
+    <div class="card">
+      <div class="num">生态本底 02 / 原生水生梯级</div>
+      <h3>水下森林与原生岸线</h3>
+      <p>沉水植物覆盖率超60%，苦草、黑藻形成水下森林；拥有海淀罕见的纯天然泥滩、芦苇与香蒲湿地；记录野生鱼类16种。</p>
+    </div>
+    <div class="card">
+      <div class="num">生态本底 03 / 复合生态矩阵</div>
+      <h3>“踏脚石”大尺度湿地</h3>
+      <p>翠湖国家湿地、稻香湖、上庄水库与玉河湿地串联，与连片京西稻田构筑了平原区绝无仅有的“水—林—田—草”交织系统。</p>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="num">空间重塑 01</div>
+      <h3>故宫北院：即将到来的超级文化锚点</h3>
+      <p>故宫博物院北院区落址南沙河南岸，主体已完工，预计2027年开放，年展出量可达本院2–3倍。从“养宫中御稻”到“迎故宫国宝”，文化势能迎来历史性跃迁。</p>
+    </div>
+    <div class="card">
+      <div class="num">空间重塑 02</div>
+      <h3>“山—稻—宫—村”的完整体验序列</h3>
+      <p>从西山脚下的野性山前农场，到中游连绵的京西稻浪与翠湖湿地，再到下游故宫北院的殿宇重檐与非遗村落。南沙河把分散的田野、水面与文化珠链串联为一条绝无仅有的漫游主线。</p>
+    </div>
+    <div class="card">
+      <div class="num">空间重塑 03</div>
+      <h3>科创人群与文化游客的“生活缓冲舱”</h3>
+      <p>它为高压运转的科创人群提供推窗见田、出门入水的松弛日常，也为故宫数十万文化游客在观展之后，提供坐下喝茶、漫步乡村、体验稻田手作的深度停留场景。</p>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="divider" id="dv2">
+  <div class="eyebrow">FIELD SURVEY / SITE READING</div><h2 class="divider-title"><span class="dv-num">02 /</span>踏勘调研</h2>
+</section>
+
+<section class="section" id="water">
+  <div class="section-number">01 / WATER SYSTEM</div><h2>水系分析：一条河的全段落写真</h2>
+  <p class="lead">南沙河发源于西山阳台山—凤凰岭东麓，河道全长约30.6公里，主河道自京密引水渠至海淀昌平界约16公里，纳沙涧河、柳林河等支流，经上庄与北沙河同入沙河水库。按踏勘记录，干流自西向东可分为上游（山前·乡野）、中游（平原·稻田湿地）、下游（文化·城市超级节点）三段，大致以京密引水渠、上庄水库为界；A–E 五个观察点记录了从“河道无水、阶梯高差”到“水面渐宽、步道成景”的渐变。</p>
+  <div class="wmap" id="wmap">
+    <img src="assets/img-05.jpg" alt="南沙河水系现状图">
+    <div class="wlg"><span><i style="background:#274f59"></i>现状水岸需要更新设计</span><br><span><i style="background:#b5432f"></i>现状水岸已有景观步道和景观</span></div>
+    <button class="wpt" data-pt="A" style="left:31.98%;top:33.99%">A</button><button class="wpt" data-pt="B" style="left:39.53%;top:32.79%">B</button><button class="wpt red" data-pt="C" style="left:49.26%;top:44.80%">C</button><button class="wpt red" data-pt="D" style="left:51.06%;top:41.40%">D</button><button class="wpt red" data-pt="E" style="left:60.73%;top:40.97%">E</button>
+    <div class="wcard" id="wcard-A" style="left:14.75%;top:37.97%;width:30%">
+      <span class="wc-tri" style="left:calc(57.47% - 8px)"></span>
+      <div class="wc-head"><span class="wc-chip">A</span><div><div class="wc-title">有高差，呈阶梯状下；调研时河道无水</div><div class="wc-en">Stepped banks with a level drop; channel dry at the time of survey</div></div></div>
+      <div class="wc-ph"><img src="assets/img-06.jpg" alt="观察点A现场照片"><img src="assets/img-07.jpg" alt="观察点A现场照片"></div>
+      <button class="wc-x" data-x="A" aria-label="关闭">×</button>
+    </div><div class="wcard" id="wcard-B" style="left:22.38%;top:40.20%;width:30%">
+      <span class="wc-tri" style="left:calc(57.27% - 8px)"></span>
+      <div class="wc-head"><span class="wc-chip">B</span><div><div class="wc-title">有高差，呈阶梯状下</div><div class="wc-en">Stepped banks with a level drop</div></div></div>
+      <div class="wc-ph"><img src="assets/img-08.jpg" alt="观察点B现场照片"><img src="assets/img-09.jpg" alt="观察点B现场照片"></div>
+      <button class="wc-x" data-x="B" aria-label="关闭">×</button>
+    </div><div class="wcard" id="wcard-C" style="left:34.38%;top:48.78%;width:30%">
+      <span class="wc-tri" style="left:calc(49.60% - 8px)"></span>
+      <div class="wc-head"><span class="wc-chip">C</span><div><div class="wc-title">水面逐渐变大，沿岸有慢行步道和景观</div><div class="wc-en">Water surface widens; trails and landscaping along the banks</div></div></div>
+      <div class="wc-ph"><img src="assets/img-10.jpg" alt="观察点C现场照片"><img src="assets/img-11.jpg" alt="观察点C现场照片"></div>
+      <button class="wc-x" data-x="C" aria-label="关闭">×</button>
+    </div><div class="wcard" id="wcard-D" style="left:45.00%;top:48.80%;width:30%">
+      <span class="wc-tri" style="left:calc(20.60% - 8px)"></span>
+      <div class="wc-head"><span class="wc-chip">D</span><div><div class="wc-title">常乐村沿岸有慢行步道和景观</div><div class="wc-en">Trails and landscaping along the Changle Village banks</div></div></div>
+      <div class="wc-ph"><img src="assets/img-12.jpg" alt="观察点D现场照片"><img src="assets/img-13.jpg" alt="观察点D现场照片"></div>
+      <button class="wc-x" data-x="D" aria-label="关闭">×</button>
+    </div><div class="wcard" id="wcard-E" style="left:52.00%;top:45.04%;width:30%">
+      <span class="wc-tri" style="left:calc(29.10% - 8px)"></span>
+      <div class="wc-head"><span class="wc-chip">E</span><div><div class="wc-title">水面与路面高差大，斜面陡，有漂浮景观</div><div class="wc-en">Large water–road level difference; steep banks; floating planted islands</div></div></div>
+      <div class="wc-ph"><img src="assets/img-14.jpg" alt="观察点E现场照片"><img src="assets/img-15.jpg" alt="观察点E现场照片"></div>
+      <button class="wc-x" data-x="E" aria-label="关闭">×</button>
+    </div>
+  </div>
+  <p class="wmap-hint">点击图上 A–E 观察点圆点，查看该点的踏勘记录与现场照片；再次点击或点 × 关闭。后续每个点位的踏勘项目图与周边环境图也会放在这张卡片里。</p>
+  
+</section>
+
+<script>
+(function(){
+  var cards = document.querySelectorAll('#wmap .wcard');
+  var marks = document.querySelectorAll('#wmap .wpt');
+  function closeAll(){ cards.forEach(function(c){c.classList.remove('on');}); marks.forEach(function(m){m.classList.remove('on');}); }
+  document.querySelectorAll('#wmap [data-pt]').forEach(function(b){
+    b.addEventListener('click', function(e){
+      e.stopPropagation();
+      var id = b.getAttribute('data-pt');
+      var card = document.getElementById('wcard-'+id);
+      var was = card.classList.contains('on');
+      closeAll();
+      if(!was){ card.classList.add('on'); document.querySelectorAll('#wmap .wpt[data-pt="'+id+'"]').forEach(function(m){m.classList.add('on');}); }
+    });
+  });
+  document.querySelectorAll('#wmap .wc-x').forEach(function(x){
+    x.addEventListener('click', function(e){ e.stopPropagation(); closeAll(); });
+  });
+})();
+</script>
+
+<section class="section" id="environs">
+  <div class="section-number">02 / SURROUNDINGS</div><h2>水系周边环境：三段河岸，三种气质</h2>
+  <p class="lead">以同一比例尺看南沙河的三段周边环境：上游山前乡野，自然感强、主理人业态自发生长；中游平原稻田湿地，水面开阔、田园与村庄交织；下游城市段落，故宫北院等国家级文化设施成为新的驱动力。</p>
+  <div class="wmap" id="envmap">
+    <img src="assets/img-16.jpg" style="width:100%;display:block" alt="南沙河水系周边环境图">
+    <button class="echip" data-er="up" style="left:37.87%;top:38.87%;background:#83ab65">上游 UPPER REACH</button>
+    <button class="echip" data-er="mid" style="left:50.05%;top:47.70%;background:#d1a546">中游 MIDDLE REACH</button>
+    <button class="echip" data-er="low" style="left:71.00%;top:38.44%;background:#4b97a4">下游 LOWER REACH</button>
+    <div class="wcard scard" id="ecard-up">
+      <div class="sc-kicker">UPSTREAM</div>
+      <div class="sc-title"><span class="sc-num">上游</span>山前乡野 · 以林地为主</div>
+      <div class="sc-body">
+        <div class="sc-tx">
+          <p class="sc-desc">西山源头至京密引水渠一段：凤凰岭、凤凰公社、小毛驴农场、野武花园、台头村等。自然感强，主理人业态和农业体验已经自发生长。</p>
+        </div>
+        <div class="sc-ph">
+          <img class="sc-main" src="assets/img-17.jpg" alt="上游周边环境照片">
+        </div>
+      </div>
+      <div class="sc-foot"><span>南沙河踏勘调研报告 · NANSHA RIVER FIELD SURVEY</span><span>上游 UPSTREAM</span></div>
+      <button class="wc-x" data-ex="up" aria-label="关闭">×</button>
+    </div>
+    <div class="wcard scard" id="ecard-mid">
+      <div class="sc-kicker">MIDDLE REACH</div>
+      <div class="sc-title"><span class="sc-num">中游</span>平原稻田湿地 · 以稻田和湿地为主</div>
+      <div class="sc-body">
+        <div class="sc-tx">
+          <p class="sc-desc">京密引水渠至上庄水库一段：稻香湖、常乐、翠湖及周边农业空间。水面更开阔，田园、湿地、村庄和公共休闲资源交织。</p>
+        </div>
+        <div class="sc-ph">
+          <img class="sc-main" src="assets/img-18.jpg" alt="中游周边环境照片">
+        </div>
+      </div>
+      <div class="sc-foot"><span>南沙河踏勘调研报告 · NANSHA RIVER FIELD SURVEY</span><span>中游 MIDDLE REACH</span></div>
+      <button class="wc-x" data-ex="mid" aria-label="关闭">×</button>
+    </div>
+    <div class="wcard scard" id="ecard-low">
+      <div class="sc-kicker">DOWNSTREAM</div>
+      <div class="sc-title"><span class="sc-num">下游</span>城市 · 以公园绿地和城市用地为主</div>
+      <div class="sc-body">
+        <div class="sc-tx">
+          <p class="sc-desc">上庄水库至区界一段：故宫北院、李家坟、玉河湿地及更城市化地区。国家级文化设施与城市公共空间成为新的驱动力。</p>
+        </div>
+        <div class="sc-ph">
+          <img class="sc-main" src="assets/img-19.jpg" alt="下游周边环境照片">
+        </div>
+      </div>
+      <div class="sc-foot"><span>南沙河踏勘调研报告 · NANSHA RIVER FIELD SURVEY</span><span>下游 DOWNSTREAM</span></div>
+      <button class="wc-x" data-ex="low" aria-label="关闭">×</button>
+    </div>
+    
+  </div>
+  <p class="wmap-hint">点击图上「上游 / 中游 / 下游」标签，查看该段的周边环境速写；再次点击或点 × 关闭。</p>
+</section>
+
+<script>
+(function(){
+  var emap=document.getElementById('envmap');
+  if(!emap)return;
+  function closeAll(){ emap.querySelectorAll('.scard').forEach(function(c){c.classList.remove('on');}); }
+  emap.querySelectorAll('.echip').forEach(function(b){
+    b.addEventListener('click',function(){
+      var card=document.getElementById('ecard-'+b.getAttribute('data-er'));
+      var open=card.classList.contains('on');
+      closeAll();
+      if(!open){ card.classList.add('on'); }
+    });
+  });
+  emap.querySelectorAll('[data-ex]').forEach(function(x){
+    x.addEventListener('click',function(e){ e.stopPropagation(); closeAll(); });
+  });
+})();
+</script>
+
+<section class="section" id="survey">
+  <div class="section-number">03 / FIELD SURVEY</div><h2>河畔锚点：沿河十五个现场</h2>
+  <p class="lead">团队沿南沙河干流及昌平段开展两轮实地踏勘，自西向东布设 15 个踏勘点位，覆盖上游（山前·乡野）、中游（平原·稻田湿地）、下游（文化·城市超级节点）与昌平段各典型河段，逐点记录河道断面、水面、驳岸与沿岸活动的第一手现场，作为后续策划与设计的工作底图。点位按资源层级分为五类：<strong>国家级资源</strong>（红点：故宫北院、翠湖国家城市湿地公园）、<strong>市区级景区与公园</strong>（橙点：稻香湖公园、京西稻田、玉河雨水湿地公园）、<strong>村镇</strong>（绿点：台头村、常乐村、李家坟村、杏花村、上庄村）、<strong>个体经营与创新业态</strong>（深色点：凤凰公社、凤凰岭·龙泉寺、观音寺、野武花园·小毛驴农园）、<strong>现状小区</strong>（浅黄点：世茂西山龙胤）——一条河串联起不同层级、不同主体的空间实验。</p>
+  <div class="wmap" id="smap"><img src="assets/img-20.jpg" style="width:100%;display:block" alt="南沙河踏勘点位图">
+    <div class="wlg"><span><i style="background:#b5432f"></i>国家级资源</span><br><span><i style="background:#d1a546"></i>市区级景区·公园</span><br><span><i style="background:#83ab65"></i>村镇</span><br><span><i style="background:#274f59"></i>个体经营与创新业态</span><br><span><i style="background:#e3c53c"></i>现状小区</span></div>
+    <button class="spt" data-sp="1" aria-label="踏勘点 1" style="left:31.2%;top:34.58%">1</button>
+    <button class="spt" data-sp="2" aria-label="踏勘点 2" style="left:27.95%;top:39.59%">2</button>
+    <button class="spt green" data-sp="3" aria-label="踏勘点 3" style="left:29.48%;top:40.13%">3</button>
+    <button class="spt green" data-sp="4" aria-label="踏勘点 4" style="left:35.62%;top:38.23%">4</button>
+    <button class="spt" data-sp="5" aria-label="踏勘点 5" style="left:39.58%;top:29.78%">5</button>
+    <button class="spt nodata" aria-label="踏勘点 6：观音寺（与点位 2 合并踏勘）" style="left:34.4%;top:32.1%" tabindex="-1">6</button>
+    <button class="spt yellow" data-sp="7" aria-label="踏勘点 7" style="left:48.48%;top:47.43%">7</button>
+    <button class="spt red" data-sp="8" aria-label="踏勘点 8" style="left:49.98%;top:37.12%">8</button>
+    <button class="spt yellow" data-sp="9" aria-label="踏勘点 9" style="left:54.38%;top:52.13%">9</button>
+    <button class="spt green" data-sp="10" aria-label="踏勘点 10" style="left:51.51%;top:44.55%">10</button>
+    <button class="spt house nodata" aria-label="踏勘点 11：世茂西山龙胤（现状小区，暂无踏勘记录）" style="left:54.25%;top:43.51%" tabindex="-1">11</button>
+    <button class="spt green nodata" aria-label="踏勘点 12：上庄村（暂无踏勘记录）" style="left:55.1%;top:35.05%" tabindex="-1">12</button>
+    <button class="spt green" data-sp="13" aria-label="踏勘点 13" style="left:60.03%;top:37.1%">13</button>
+    <button class="spt red" data-sp="14" aria-label="踏勘点 14" style="left:58.4%;top:45.15%">14</button>
+    <button class="spt yellow" data-sp="15" aria-label="踏勘点 15" style="left:63.44%;top:46.99%">15</button>
+        <div class="wcard scard" id="scard-1">
+      <div class="sc-kicker">上游 UPSTREAM · 山前乡野实验性 · 乡建文创 / 主理人业态</div>
+      <div class="sc-title"><span class="sc-num">01</span>凤凰公社</div>
+      <div class="sc-body">
+        <div class="sc-tx">
+          <p class="sc-desc">凤凰公社是山前乡村中自发生长出的主理人业态集群，由村庄既有空间更新而来，集餐饮、集会与手作空间于一体，是片区“实验性”气质的代表。</p>
+          <div class="sc-sub">功能与活动</div>
+          <ul class="sc-ul"><li>餐饮与社群食堂</li><li>手作工坊与市集活动</li><li>乡建文创与社群聚会</li></ul>
+          <div class="sc-sub">踏勘观察</div>
+          <p class="sc-obs">空间尺度亲切、运营轻量，验证了山前地带小微业态的存活能力，是上游“主理人业态自发生长”的直接样本。</p>
+        </div>
+        <div class="sc-ph">
+          <img class="sc-main" src="assets/img-21.jpg" alt="踏勘点1现场照片"><div class="sc-row"><img src="assets/img-22.jpg" alt="踏勘点1现场照片"><img src="assets/img-23.jpg" alt="踏勘点1现场照片"><img src="assets/img-24.jpg" alt="踏勘点1现场照片"><img src="assets/img-25.jpg" alt="踏勘点1现场照片"></div>
+        </div>
+      </div>
+      <div class="sc-foot"><span>南沙河踏勘调研报告 · NANSHA RIVER FIELD SURVEY</span><span>踏勘点 01</span></div>
+      <button class="wc-x" data-sx="1" aria-label="关闭">×</button>
+    </div>
+    <div class="wcard scard" id="scard-2">
+      <div class="sc-kicker">上游 UPSTREAM · 山前乡野实验性 · 山前寺院 / 郊野登山</div>
+      <div class="sc-title"><span class="sc-num">02</span>凤凰岭 · 龙泉寺</div>
+      <div class="sc-body">
+        <div class="sc-tx">
+          <p class="sc-desc">凤凰岭位于片区西北山前地带，是南沙河上游支流的源头区域。山麓分布着龙泉寺、观音寺等传统寺院，是片区内最成熟的文化与登山目的地。</p>
+          <div class="sc-sub">功能与活动</div>
+          <ul class="sc-ul"><li>登山徒步与郊野游憩</li><li>寺院参访与传统文化体验</li><li>周末近郊客流的集散地</li></ul>
+          <div class="sc-sub">踏勘观察</div>
+          <p class="sc-obs">山前门户气质明确，客流以周末为主；但寺院与山的客流尚未与南沙河河段形成连续的体验串联。</p>
+        </div>
+        <div class="sc-ph">
+          <img class="sc-main" src="assets/img-26.jpg" alt="踏勘点2现场照片"><div class="sc-row"><img src="assets/img-27.jpg" alt="踏勘点2现场照片"><img src="assets/img-28.jpg" alt="踏勘点2现场照片"></div>
+        </div>
+      </div>
+      <div class="sc-foot"><span>南沙河踏勘调研报告 · NANSHA RIVER FIELD SURVEY</span><span>踏勘点 02</span></div>
+      <button class="wc-x" data-sx="2" aria-label="关闭">×</button>
+    </div>
+    <div class="wcard scard" id="scard-3">
+      <div class="sc-kicker">上游 UPSTREAM · 山前乡野实验性 · 赏花村落 / 季节乡游</div>
+      <div class="sc-title"><span class="sc-num">03</span>杏花村</div>
+      <div class="sc-body">
+        <div class="sc-tx">
+          <p class="sc-desc">临近凤凰岭风景区的杏花村以春季杏花闻名，山前坡地的杏花林是片区内最有季节辨识度的景观之一。</p>
+          <div class="sc-sub">功能与活动</div>
+          <ul class="sc-ul"><li>春季赏花与摄影</li><li>乡村漫步与采摘</li><li>季节性乡游目的地</li></ul>
+          <div class="sc-sub">踏勘观察</div>
+          <p class="sc-obs">客流高度集中在花季，淡季内容与设施基本空转——这是上游村落普遍的季节性问题，也是策划需要回答的题。</p>
+        </div>
+        <div class="sc-ph">
+          <img class="sc-main" src="assets/img-29.jpg" alt="踏勘点3现场照片"><div class="sc-row"><img src="assets/img-30.jpg" alt="踏勘点3现场照片"><img src="assets/img-31.jpg" alt="踏勘点3现场照片"><img src="assets/img-32.jpg" alt="踏勘点3现场照片"></div>
+        </div>
+      </div>
+      <div class="sc-foot"><span>南沙河踏勘调研报告 · NANSHA RIVER FIELD SURVEY</span><span>踏勘点 03</span></div>
+      <button class="wc-x" data-sx="3" aria-label="关闭">×</button>
+    </div>
+    <div class="wcard scard" id="scard-4">
+      <div class="sc-kicker">上游 UPSTREAM · 山前乡野实验性 · 山前村落</div>
+      <div class="sc-title"><span class="sc-num">04</span>台头村</div>
+      <div class="sc-body">
+        <div class="sc-tx">
+          <p class="sc-desc">台头村位于凤凰岭山前，村落肌理保存完整，是进入山前片区的门户村落之一，承接部分登山与乡游客流。</p>
+          <div class="sc-sub">功能与活动</div>
+          <ul class="sc-ul"><li>村落生活与乡土风貌</li><li>农家乐与院落休闲</li><li>登山客流的补给节点</li></ul>
+          <div class="sc-sub">踏勘观察</div>
+          <p class="sc-obs">村口与主街具备更新基础，有条件成为串联凤凰岭与南沙河的“山前驿站”。</p>
+        </div>
+        <div class="sc-ph">
+          <img class="sc-main" src="assets/img-33.jpg" alt="踏勘点4现场照片"><div class="sc-row"><img src="assets/img-34.jpg" alt="踏勘点4现场照片"><img src="assets/img-35.jpg" alt="踏勘点4现场照片"></div>
+        </div>
+      </div>
+      <div class="sc-foot"><span>南沙河踏勘调研报告 · NANSHA RIVER FIELD SURVEY</span><span>踏勘点 04</span></div>
+      <button class="wc-x" data-sx="4" aria-label="关闭">×</button>
+    </div>
+    <div class="wcard scard" id="scard-5">
+      <div class="sc-kicker">上游 UPSTREAM · 山前乡野实验性 · 自然教育 / 社区支持农业</div>
+      <div class="sc-title"><span class="sc-num">05</span>野武花园 · 小毛驴农园</div>
+      <div class="sc-body">
+        <div class="sc-tx">
+          <p class="sc-desc">野武花园与小毛驴市民农园是山前的自然教育与社区支持农业（CSA）实践地，以花境营造、农耕体验和自然课堂吸引城市家庭走进田间。</p>
+          <div class="sc-sub">功能与活动</div>
+          <ul class="sc-ul"><li>农耕体验与亲子自然教育</li><li>花境参观与园艺活动</li><li>农场直供与社群认养</li></ul>
+          <div class="sc-sub">踏勘观察</div>
+          <p class="sc-obs">活动内容与季节强绑定，是“节气运营”的天然样本；与南沙河的河道空间之间仍有很大的连接余地。有温室植物园、香草园区等植物空间。</p>
+        </div>
+        <div class="sc-ph">
+          <img class="sc-main" src="assets/img-36.jpg" alt="踏勘点5现场照片"><div class="sc-row"><img src="assets/img-37.jpg" alt="踏勘点5现场照片"><img src="assets/img-38.jpg" alt="踏勘点5现场照片"><img src="assets/img-39.jpg" alt="踏勘点5现场照片"></div>
+        </div>
+      </div>
+      <div class="sc-foot"><span>南沙河踏勘调研报告 · NANSHA RIVER FIELD SURVEY</span><span>踏勘点 05</span></div>
+      <button class="wc-x" data-sx="5" aria-label="关闭">×</button>
+    </div>
+    <div class="wcard scard" id="scard-7">
+      <div class="sc-kicker">中游 MIDDLE REACH · 平原稻田湿地 · 滨湖休闲 / 公共客厅</div>
+      <div class="sc-title"><span class="sc-num">07</span>稻香湖公园</div>
+      <div class="sc-body">
+        <div class="sc-tx">
+          <p class="sc-desc">稻香湖公园是南沙河中游的开阔水面节点，木拱桥、观景平台与湖面游乐设施构成了片区内最成熟的公共休闲场景。</p>
+          <div class="sc-sub">功能与活动</div>
+          <ul class="sc-ul"><li>滨湖漫步与观景</li><li>亲子游乐与湖畔露营</li><li>节庆活动与市集</li></ul>
+          <div class="sc-sub">踏勘观察</div>
+          <p class="sc-obs">公园内的商业建筑陈旧，已有稳定客流与活动基础，是全线公共生活的“样板间”。</p>
+        </div>
+        <div class="sc-ph">
+          <img class="sc-main" src="assets/img-40.jpg" alt="踏勘点7现场照片"><div class="sc-row"><img src="assets/img-41.jpg" alt="踏勘点7现场照片"><img src="assets/img-42.jpg" alt="踏勘点7现场照片"><img src="assets/img-43.jpg" alt="踏勘点7现场照片"></div>
+        </div>
+      </div>
+      <div class="sc-foot"><span>南沙河踏勘调研报告 · NANSHA RIVER FIELD SURVEY</span><span>踏勘点 07</span></div>
+      <button class="wc-x" data-sx="7" aria-label="关闭">×</button>
+    </div>
+    <div class="wcard scard" id="scard-8">
+      <div class="sc-kicker">中游 MIDDLE REACH · 平原稻田湿地 · 城市湿地 / 生态科普</div>
+      <div class="sc-title"><span class="sc-num">08</span>翠湖国家城市湿地公园</div>
+      <div class="sc-body">
+        <div class="sc-tx">
+          <p class="sc-desc">翠湖湿地公园是片区内生态等级最高的湿地空间，水面、芦苇与荷塘交织，是观鸟与生态科普的重要场所。</p>
+          <div class="sc-sub">功能与活动</div>
+          <ul class="sc-ul"><li>湿地观鸟与生态科普</li><li>预约参观与自然研学</li><li>滨水漫步</li></ul>
+          <div class="sc-sub">踏勘观察</div>
+          <p class="sc-obs">生态本底好、开放强度低；其“安静的湿地”与南沙河沿岸的“公共的水岸”正好互补。</p>
+        </div>
+        <div class="sc-ph">
+          <img class="sc-main" src="assets/img-44.jpg" alt="踏勘点8现场照片"><div class="sc-row"><img src="assets/img-45.jpg" alt="踏勘点8现场照片"><img src="assets/img-46.jpg" alt="踏勘点8现场照片"></div>
+        </div>
+      </div>
+      <div class="sc-foot"><span>南沙河踏勘调研报告 · NANSHA RIVER FIELD SURVEY</span><span>踏勘点 08</span></div>
+      <button class="wc-x" data-sx="8" aria-label="关闭">×</button>
+    </div>
+    <div class="wcard scard" id="scard-9">
+      <div class="sc-kicker">中游 MIDDLE REACH · 平原稻田湿地 · 田园景观 / 农耕体验</div>
+      <div class="sc-title"><span class="sc-num">09</span>京西稻田</div>
+      <div class="sc-body">
+        <div class="sc-tx">
+          <p class="sc-desc">南沙河中游沿岸分布着大片京西稻种植区。京西稻是有历史的贡稻品种，是海淀山后最具历史厚度的农业景观，秋季金黄一片。</p>
+          <div class="sc-sub">功能与活动</div>
+          <ul class="sc-ul"><li>水稻种植与田园景观</li><li>农耕节庆与收割体验</li><li>观景平台与摄影打卡</li></ul>
+          <div class="sc-sub">踏勘观察</div>
+          <p class="sc-obs">稻田是全线最有传播力的画面，但亲水性与可达性仍弱，观景多停留于“看田”，尚未“到水”。</p>
+        </div>
+        <div class="sc-ph">
+          <img class="sc-main" src="assets/img-47.jpg" alt="踏勘点9现场照片"><div class="sc-row"><img src="assets/img-48.jpg" alt="踏勘点9现场照片"><img src="assets/img-49.jpg" alt="踏勘点9现场照片"><img src="assets/img-50.jpg" alt="踏勘点9现场照片"></div>
+        </div>
+      </div>
+      <div class="sc-foot"><span>南沙河踏勘调研报告 · NANSHA RIVER FIELD SURVEY</span><span>踏勘点 09</span></div>
+      <button class="wc-x" data-sx="9" aria-label="关闭">×</button>
+    </div>
+    <div class="wcard scard" id="scard-10">
+      <div class="sc-kicker">中游 MIDDLE REACH · 平原稻田湿地 · 稻作村庄 / 滨水村落</div>
+      <div class="sc-title"><span class="sc-num">10</span>常乐村</div>
+      <div class="sc-body">
+        <div class="sc-tx">
+          <p class="sc-desc">常乐村是上庄镇京西稻核心种植区，建有 400 余亩高标准农田与智慧农场示范基地；村庄沿岸已出现慢行步道与滨水景观。</p>
+          <div class="sc-sub">功能与活动</div>
+          <ul class="sc-ul"><li>高标准农田与智慧农业</li><li>滨水慢行与村庄休闲</li><li>稻作文化体验</li></ul>
+          <div class="sc-sub">踏勘观察</div>
+          <p class="sc-obs">农业、村庄、水岸三层资源叠加，是中游最具复合潜力的村落节点。</p>
+        </div>
+        <div class="sc-ph">
+          <img class="sc-main" src="assets/img-51.jpg" alt="踏勘点10现场照片"><div class="sc-row"><img src="assets/img-52.jpg" alt="踏勘点10现场照片"><img src="assets/img-53.jpg" alt="踏勘点10现场照片"></div>
+        </div>
+      </div>
+      <div class="sc-foot"><span>南沙河踏勘调研报告 · NANSHA RIVER FIELD SURVEY</span><span>踏勘点 10</span></div>
+      <button class="wc-x" data-sx="10" aria-label="关闭">×</button>
+    </div>
+    <div class="wcard scard" id="scard-13">
+      <div class="sc-kicker">下游 DOWNSTREAM · 文化城市超级节点 · 滨水村落</div>
+      <div class="sc-title"><span class="sc-num">13</span>李家坟村</div>
+      <div class="sc-body">
+        <div class="sc-tx">
+          <p class="sc-desc">李家坟村位于南沙河下游北岸，与在建的故宫博物院北院区隔河相望，是下游“文化 · 城市 · 超级节点”段落中距离国家级文化设施最近的村庄。</p>
+          <div class="sc-sub">功能与活动</div>
+          <ul class="sc-ul"><li>村落居住与乡土生活</li><li>承接故宫北院建设与开放后的服务需求（餐饮、住宿、停车等，待培育）</li><li>滨水界面的潜在衔接节点</li></ul>
+          <div class="sc-sub">踏勘观察</div>
+          <p class="sc-obs">超级节点的“邻家村落”——故宫北院开放后，这里将最先面对客流外溢；村庄界面、停车与到达路径需要提前梳理。</p>
+        </div>
+        <div class="sc-ph">
+          <img class="sc-main" src="assets/img-54.jpg" alt="踏勘点13现场照片"><div class="sc-row"><img src="assets/img-55.jpg" alt="踏勘点13现场照片"><img src="assets/img-56.jpg" alt="踏勘点13现场照片"><img src="assets/img-57.jpg" alt="踏勘点13现场照片"></div>
+        </div>
+      </div>
+      <div class="sc-foot"><span>南沙河踏勘调研报告 · NANSHA RIVER FIELD SURVEY</span><span>踏勘点 13</span></div>
+      <button class="wc-x" data-sx="13" aria-label="关闭">×</button>
+    </div>
+    <div class="wcard scard" id="scard-14">
+      <div class="sc-kicker">下游 DOWNSTREAM · 文化城市超级节点 · 国家级文化设施（在建）</div>
+      <div class="sc-title"><span class="sc-num">14</span>故宫北院</div>
+      <div class="sc-body">
+        <div class="sc-tx">
+          <p class="sc-desc">故宫博物院北院区选址南沙河下游北岸，正在建设中。建成后将成为片区等级最高的文化引擎，改变整个山后地区的能级结构。</p>
+          <div class="sc-sub">功能与活动</div>
+          <ul class="sc-ul"><li>文物保护修复与展示（规划）</li><li>大型展览与公共教育（规划）</li><li>国家级文化客流的目的地</li></ul>
+          <div class="sc-sub">踏勘观察</div>
+          <p class="sc-obs">线上的超级节点，</p>
+        </div>
+        <div class="sc-ph">
+          <img class="sc-main" src="assets/img-58.jpg" alt="踏勘点14现场照片"><div class="sc-row"><img src="assets/img-59.jpg" alt="踏勘点14现场照片"><img src="assets/img-60.jpg" alt="踏勘点14现场照片"><img src="assets/img-61.jpg" alt="踏勘点14现场照片"></div>
+        </div>
+      </div>
+      <div class="sc-foot"><span>南沙河踏勘调研报告 · NANSHA RIVER FIELD SURVEY</span><span>踏勘点 14</span></div>
+      <button class="wc-x" data-sx="14" aria-label="关闭">×</button>
+    </div>
+    <div class="wcard scard" id="scard-15">
+      <div class="sc-kicker">下游 DOWNSTREAM · 文化城市超级节点 · 滨水湿地 / 城市界面</div>
+      <div class="sc-title"><span class="sc-num">15</span>玉河雨水湿地公园</div>
+      <div class="sc-body">
+        <div class="sc-tx">
+          <p class="sc-desc">玉河湿地公园位于南沙河下游，与故宫北院、李家坟等节点共同构成下游的城市滨水界面，目前以生态涵养功能为主。</p>
+          <div class="sc-sub">功能与活动</div>
+          <ul class="sc-ul"><li>湿地生态涵养</li><li>滨水游憩（培育中）</li><li>衔接城市社区的绿色界面</li></ul>
+          <div class="sc-sub">踏勘观察</div>
+          <p class="sc-obs">下游公共性的重要落点，斩获伦敦设计奖景观金奖。紧邻即将开放的故宫北院，整园占地85公顷，以水为核心。</p>
+        </div>
+        <div class="sc-ph">
+          <img class="sc-main" src="assets/img-62.jpg" alt="踏勘点15现场照片"><div class="sc-row"><img src="assets/img-63.jpg" alt="踏勘点15现场照片"><img src="assets/img-64.jpg" alt="踏勘点15现场照片"><img src="assets/img-65.jpg" alt="踏勘点15现场照片"></div>
+        </div>
+      </div>
+      <div class="sc-foot"><span>南沙河踏勘调研报告 · NANSHA RIVER FIELD SURVEY</span><span>踏勘点 15</span></div>
+      <button class="wc-x" data-sx="15" aria-label="关闭">×</button>
+    </div>
+    </div>
+  <p class="wmap-hint">点击图上带编号的圆点，查看该踏勘点的记录与现场照片；再次点击或点 × 关闭。（5、11、12 号为过渡点位，暂无照片内容）</p>
+  
+</section>
+
+<script>
+(function(){
+  var smap=document.getElementById('smap');
+  if(!smap)return;
+  function closeAll(){ smap.querySelectorAll('.scard').forEach(function(c){c.classList.remove('on');});
+    smap.querySelectorAll('.spt').forEach(function(x){x.classList.remove('on');}); }
+  smap.querySelectorAll('.spt[data-sp]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var card=document.getElementById('scard-'+b.getAttribute('data-sp'));
+      var open=card.classList.contains('on');
+      closeAll();
+      if(!open){ card.classList.add('on'); b.classList.add('on'); }
+    });
+  });
+  smap.querySelectorAll('[data-sx]').forEach(function(x){
+    x.addEventListener('click',function(e){ e.stopPropagation(); closeAll(); });
+  });
+})();
+</script>
+
+
+<section class="section" id="summary">
+  <div class="section-number">04 / SUMMARY</div><h2>踏勘总结</h2>
+  <p class="lead">两轮踏勘与同比例尺的读图之后，我们对南沙河形成了两条最基本的判断：它已经有自己的气质，也有自己的短板。总结如下——</p>
+  <div class="sum-grid">
+    <div class="sum-card keep">
+      <h3>南沙河已经有的气质</h3>
+      <ul>
+        <li>水岸从“河道无水、阶梯高差”到“水面渐宽、步道成景”自然渐变——<strong>慢行与步道已有基础，生态本底出色，乡野感完整</strong>。</li>
+        <li><strong>从源头到城市，体验连续而丰富</strong>——上游山前乡野、中游稻田湿地、下游城市段落，一条河串起三种空间气质。</li>
+        <li><strong>沿线持续发生跨尺度、跨主体的实验</strong>——主理人空间、新型农业、湿地保育、文化机构与国家级资源布局：南沙河是一条“实验性的河”，创新本来就长在这片土地上。</li>
+      </ul>
+    </div>
+    <div class="sum-card gap">
+      <h3>当前最突出的问题</h3>
+      <ul>
+        <li><strong>西侧现状水岸有待更新设计、亲水空间不足</strong>——很多河岸“不鼓励人靠近水”。</li>
+        <li><strong>慢行系统已有基础，但服务与消费配套不足</strong>——村庄、公园、农田、故宫北院与河流彼此割裂。</li>
+        <li>很多好内容<strong>零零散散、与水关系不密切</strong>，尚未形成气候。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="divider" id="dv3">
+  <div class="eyebrow">INTERNATIONAL BENCHMARKS</div><h2 class="divider-title"><span class="dv-num">03 /</span>国际对标</h2>
+</section>
+
+
+<section class="section" id="case1">
+  <div class="section-number">CASE 01 / ISAR RIVER · MUNICH</div><h2>慕尼黑 · 伊萨尔河</h2>
+  <p class="lead">最值得学的是它对河流完整性的经营：多元段落分工，让人能亲水近水，用自然生态的方法策划滨水空间。</p>
+  <div class="wide-media-box"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080"><g id="page-1" transform="translate(0,0)">
+
+<defs>
+  <filter id="p0_softShadow" x="-8%" y="-8%" width="116%" height="120%" color-interpolation-filters="sRGB">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="3.5" result="b"/>
+    <feOffset dx="0" dy="2" result="o"/>
+    <feComponentTransfer in="o" result="s"><feFuncA type="linear" slope="0.12"/></feComponentTransfer>
+    <feMerge><feMergeNode in="s"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="p0_mapShadow" x="-3%" y="-3%" width="106%" height="106%" color-interpolation-filters="sRGB">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="8" result="b"/>
+    <feOffset dx="0" dy="4" result="o"/>
+    <feComponentTransfer in="o" result="s"><feFuncA type="linear" slope="0.14"/></feComponentTransfer>
+    <feMerge><feMergeNode in="s"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="p0_pillShadow" x="-25%" y="-35%" width="150%" height="180%" color-interpolation-filters="sRGB">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="2.5" result="b"/>
+    <feOffset dx="0" dy="1.5" result="o"/>
+    <feComponentTransfer in="o" result="s"><feFuncA type="linear" slope="0.30"/></feComponentTransfer>
+    <feMerge><feMergeNode in="s"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <clipPath id="p0_mapClip">
+    <rect x="784" y="36" width="1100" height="1008" rx="18" ry="18"/>
+  </clipPath>
+  <clipPath id="p0_wideClip"><rect x="40" y="314" width="692" height="277" rx="10" ry="10"/></clipPath>
+  <clipPath id="p0_s1Clip"><rect x="40" y="599" width="342" height="218" rx="10" ry="10"/></clipPath>
+  <clipPath id="p0_s2Clip"><rect x="40" y="825" width="342" height="218" rx="10" ry="10"/></clipPath>
+  <clipPath id="p0_tallClip"><rect x="390" y="599" width="342" height="445" rx="10" ry="10"/></clipPath>
+</defs>
+
+<rect width="1920" height="1080" fill="#F5F4F1"/>
+<rect x="16" y="16" width="752" height="1048" rx="20" ry="20"
+      fill="#FFFFFF" filter="url(#p0_softShadow)"/>
+
+<!-- title -->
+<text font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="15.5"><tspan x="40" y="118" fill="#3A4149">伊萨尔河自阿尔卑斯北麓穿慕尼黑约14公里，不是被城</tspan></text>
+<text font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="15.5"><tspan x="40" y="142" fill="#3A4149">市「圈养」的景观水道，而是仍保留</tspan><tspan fill="#C62828">自然河势与多元段落</tspan></text>
+<text font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="15.5"><tspan x="40" y="166" fill="#3A4149">的完整河流：城南近自然可涉水，中段博物馆与啤酒花园</tspan></text>
+<text font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="15.5"><tspan x="40" y="190" fill="#3A4149">并置，北段与英国花园咬合。慕尼黑作为欧洲科技与产业</tspan></text>
+<text font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="15.5"><tspan x="40" y="214" fill="#3A4149">中心，伊萨尔河长期承担</tspan><tspan fill="#C62828">科技城市日常后花园</tspan><tspan fill="#3A4149">——与海淀</tspan></text>
+<text font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="15.5"><tspan x="40" y="238" fill="#3A4149">科技区、南沙河高度同构。城南 Flaucher </tspan></text>
+<text font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="15.5"><tspan x="40" y="262" fill="#3A4149">砾石滩让人直接坐到水边；博物馆岛把「看展」与「沿河</tspan></text>
+<text font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="15.5"><tspan x="40" y="286" fill="#3A4149">走」连成一体；Eisbach 由工程副产品长成市民</tspan></text>
+
+<image x="40" y="314" width="692" height="277"
+       xlink:href="assets/img-66.jpg" preserveAspectRatio="xMidYMid slice" clip-path="url(#p0_wideClip)"/>
+<image x="40" y="599" width="342" height="218"
+       xlink:href="assets/img-67.jpg" preserveAspectRatio="xMidYMid slice" clip-path="url(#p0_s1Clip)"/>
+<image x="40" y="825" width="342" height="218"
+       xlink:href="assets/img-68.jpg" preserveAspectRatio="xMidYMid slice" clip-path="url(#p0_s2Clip)"/>
+<image x="390" y="599" width="342" height="445"
+       xlink:href="assets/img-69.jpg" preserveAspectRatio="xMidYMid slice" clip-path="url(#p0_tallClip)"/>
+<text x="52" y="579" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">Flaucher 砾石滩 · 近自然亲水</text>
+<text x="50" y="807" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="11" font-weight="600" fill="#FFFFFF">博物馆岛</text>
+<text x="50" y="1033" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="11" font-weight="600" fill="#FFFFFF">Eisbach 冲浪</text>
+<text x="400" y="1032" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">英国花园 · 啤酒花园</text>
+
+<rect x="780" y="32" width="1108" height="1016" rx="20" ry="20"
+      fill="#FFFFFF" filter="url(#p0_mapShadow)"/>
+<g clip-path="url(#p0_mapClip)">
+  <image x="784" y="36" width="1100" height="1008"
+         xlink:href="assets/img-70.jpg" preserveAspectRatio="xMidYMid slice"/>
+</g>
+<rect x="784" y="36" width="1100" height="1008" rx="18" ry="18"
+      fill="none" stroke="#E4E0D8" stroke-width="1.5"/>
+<line x1="1165.7" y1="865.0" x2="1139.7" y2="855.0" stroke="#C4A035" stroke-width="1.6"/>
+<circle cx="1139.7" cy="855.0" r="5.5" fill="#C4A035" stroke="#FFFFFF" stroke-width="1.8"/>
+<circle cx="1139.7" cy="855.0" r="2.2" fill="#FFFFFF"/>
+<rect x="1165.7" y="841.0" width="183.8" height="48" rx="10" ry="10" fill="#FFFFFF" filter="url(#p0_pillShadow)"/>
+<rect x="1165.7" y="841.0" width="183.8" height="48" rx="10" ry="10" fill="none" stroke="#E4E0D8" stroke-width="0.8"/>
+<circle cx="1186.7" cy="865.0" r="11" fill="#C4A035"/>
+<text x="1186.7" y="869.2" text-anchor="middle" font-family="'Noto Sans','Helvetica Neue',Arial,sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF">01</text>
+<text x="1205.7" y="860.0" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="14.5" font-weight="700" fill="#161616">Flaucher 砾石滩</text>
+<text x="1205.7" y="878.0" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="11.5" fill="#5C6570">城南近自然亲水</text>
+<line x1="1425.6" y1="538.0" x2="1453.6" y2="540.0" stroke="#5B6C8C" stroke-width="1.6"/>
+<circle cx="1453.6" cy="540.0" r="5.5" fill="#5B6C8C" stroke="#FFFFFF" stroke-width="1.8"/>
+<circle cx="1453.6" cy="540.0" r="2.2" fill="#FFFFFF"/>
+<rect x="1218.4" y="514.0" width="207.2" height="48" rx="10" ry="10" fill="#FFFFFF" filter="url(#p0_pillShadow)"/>
+<rect x="1218.4" y="514.0" width="207.2" height="48" rx="10" ry="10" fill="none" stroke="#E4E0D8" stroke-width="0.8"/>
+<circle cx="1239.4" cy="538.0" r="11" fill="#5B6C8C"/>
+<text x="1239.4" y="542.2" text-anchor="middle" font-family="'Noto Sans','Helvetica Neue',Arial,sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF">02</text>
+<text x="1258.4" y="533.0" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="14.5" font-weight="700" fill="#161616">博物馆岛</text>
+<text x="1258.4" y="551.0" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="11.5" fill="#5C6570">德意志博物馆 · 文化高地</text>
+<line x1="1537.3" y1="311.5" x2="1513.3" y2="319.5" stroke="#3A8FD6" stroke-width="1.6"/>
+<circle cx="1513.3" cy="319.5" r="5.5" fill="#3A8FD6" stroke="#FFFFFF" stroke-width="1.8"/>
+<circle cx="1513.3" cy="319.5" r="2.2" fill="#FFFFFF"/>
+<rect x="1537.3" y="287.5" width="180.0" height="48" rx="10" ry="10" fill="#FFFFFF" filter="url(#p0_pillShadow)"/>
+<rect x="1537.3" y="287.5" width="180.0" height="48" rx="10" ry="10" fill="none" stroke="#E4E0D8" stroke-width="0.8"/>
+<circle cx="1558.3" cy="311.5" r="11" fill="#3A8FD6"/>
+<text x="1558.3" y="315.7" text-anchor="middle" font-family="'Noto Sans','Helvetica Neue',Arial,sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF">03</text>
+<text x="1577.3" y="306.5" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="14.5" font-weight="700" fill="#161616">Eisbach 冲浪点</text>
+<text x="1577.3" y="324.5" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="11.5" fill="#5C6570">工程副产品→市民文化</text>
+<line x1="1562.1" y1="177.5" x2="1588.1" y2="193.5" stroke="#D4893A" stroke-width="1.6"/>
+<circle cx="1588.1" cy="193.5" r="5.5" fill="#D4893A" stroke="#FFFFFF" stroke-width="1.8"/>
+<circle cx="1588.1" cy="193.5" r="2.2" fill="#FFFFFF"/>
+<rect x="1347.7" y="153.5" width="214.4" height="48" rx="10" ry="10" fill="#FFFFFF" filter="url(#p0_pillShadow)"/>
+<rect x="1347.7" y="153.5" width="214.4" height="48" rx="10" ry="10" fill="none" stroke="#E4E0D8" stroke-width="0.8"/>
+<circle cx="1368.7" cy="177.5" r="11" fill="#D4893A"/>
+<text x="1368.7" y="181.7" text-anchor="middle" font-family="'Noto Sans','Helvetica Neue',Arial,sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF">04</text>
+<text x="1387.7" y="172.5" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="14.5" font-weight="700" fill="#161616">英国花园 · 啤酒花园</text>
+<text x="1387.7" y="190.5" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="11.5" fill="#5C6570">非正式社交空间</text>
+<line x1="1304.0" y1="674.0" x2="1334.0" y2="666.0" stroke="#4E9B63" stroke-width="1.6"/>
+<circle cx="1334.0" cy="666.0" r="5.5" fill="#4E9B63" stroke="#FFFFFF" stroke-width="1.8"/>
+<circle cx="1334.0" cy="666.0" r="2.2" fill="#FFFFFF"/>
+<rect x="1138.8" y="650.0" width="165.2" height="48" rx="10" ry="10" fill="#FFFFFF" filter="url(#p0_pillShadow)"/>
+<rect x="1138.8" y="650.0" width="165.2" height="48" rx="10" ry="10" fill="none" stroke="#E4E0D8" stroke-width="0.8"/>
+<circle cx="1159.8" cy="674.0" r="11" fill="#4E9B63"/>
+<text x="1159.8" y="678.2" text-anchor="middle" font-family="'Noto Sans','Helvetica Neue',Arial,sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF">05</text>
+<text x="1178.8" y="669.0" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="14.5" font-weight="700" fill="#161616">反渠化浅滩岸线</text>
+<text x="1178.8" y="687.0" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="11.5" fill="#5C6570">缓坡 · 连续可达</text>
+
+<g id="p0_badge">
+  <rect x="1728" y="54" width="140" height="46" rx="10"
+        fill="#FFFFFF" filter="url(#p0_pillShadow)"/>
+  <text x="1798" y="73" text-anchor="middle"
+        font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="12" fill="#5C6570" letter-spacing="1.5">南沙河对标</text>
+  <text x="1798" y="91" text-anchor="middle"
+        font-family="'Noto Sans','Helvetica Neue',Arial,sans-serif" font-size="14" fill="#161616" font-weight="700">CASE 01 / 03</text>
+</g>
+<g id="p0_mapTitle">
+  <rect x="802" y="54" width="240" height="34" rx="10"
+        fill="#FFFFFF" filter="url(#p0_pillShadow)"/>
+  <text x="814" y="76" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="14" font-weight="600" fill="#161616">伊萨尔河城市段 · 卫星标注图</text>
+</g>
+<text x="798" y="1062" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="11.5" fill="#8A929C">
+  底图 Esri World Imagery 正射 · 范围：Flaucher—博物馆岛—Eisbach—英国花园
+</text>
+
+</g></svg></div>
+  <div class="wide-media-box"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 1080 1920 1080"><g id="page-2" transform="translate(0,1080)">
+
+<defs>
+  <filter id="p1_cardShadow" x="-6%" y="-8%" width="112%" height="120%" color-interpolation-filters="sRGB">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="b"/>
+    <feOffset dx="0" dy="3" result="o"/>
+    <feComponentTransfer in="o" result="s"><feFuncA type="linear" slope="0.10"/></feComponentTransfer>
+    <feMerge><feMergeNode in="s"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+<rect width="1920" height="1080" fill="#F5F4F1"/>
+<text x="64" y="52" font-family="'Noto Sans','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="600" fill="#8A929C" letter-spacing="2.5">01 / ISAR · 借鉴总结</text>
+<text x="64" y="100" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="36" font-weight="700" fill="#161616">值得南沙河借鉴的总结</text>
+<text x="64" y="136" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="18" font-weight="600" fill="#3A4149">流域滨水营造</text>
+<text x="64" y="170" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="15" fill="#3A4149">伊萨尔河最值得被提炼的，不是某一处景观造型，而是它把完整流域做成可操作滨水方法的一整套机制。</text>
+<g filter="url(#p1_cardShadow)">
+  <rect x="48.0" y="212" width="593.3333333333334" height="379.0" rx="16" ry="16" fill="#FFFFFF"/>
+</g>
+<text x="76.0" y="248" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="13" fill="#8A929C">第一</text>
+<text x="76.0" y="280" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="22" font-weight="700" fill="#161616">按段落分配任务，而不是全线同质化</text>
+<text x="76.0" y="312" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="13" fill="#4A525A">伊萨尔河上游与近郊段偏向自然徒步与低干预停留；城南 Flaucher 一类砾石滩承担高强度亲水与</text>
+<text x="76.0" y="330" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="13" fill="#4A525A">野餐；城市中段叠合博物馆岛等文化节点；再向北与英国花园咬合，承接公园生活与非正式社交。</text>
+<text x="76.0" y="348" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="13" fill="#4A525A">不同河段功能分明，业态随段落切换，彼此不抢戏。</text>
+<g filter="url(#p1_cardShadow)">
+  <rect x="663.3333333333334" y="212" width="593.3333333333334" height="379.0" rx="16" ry="16" fill="#FFFFFF"/>
+</g>
+<text x="691.3333333333334" y="248" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="13" fill="#8A929C">第二</text>
+<text x="691.3333333333334" y="280" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="22" font-weight="700" fill="#161616">把“能靠近水”做成默认权利</text>
+<text x="691.3333333333334" y="312" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="13" fill="#4A525A">反渠化之后，缓坡、浅滩、砾石滩与连续可达岸线替代了“隔栏看河”；步道贯通只是基础，近水</text>
+<text x="691.3333333333334" y="330" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="13" fill="#4A525A">链接才是体验主轴——人可以坐、可以涉、可以停留，亲水不再依赖少数码头点。</text>
+<g filter="url(#p1_cardShadow)">
+  <rect x="1278.6666666666667" y="212" width="593.3333333333334" height="379.0" rx="16" ry="16" fill="#FFFFFF"/>
+</g>
+<text x="1306.6666666666667" y="248" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="13" fill="#8A929C">第三</text>
+<text x="1306.6666666666667" y="280" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="22" font-weight="700" fill="#161616">让生态界面与公共生活同构</text>
+<text x="1306.6666666666667" y="312" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="13" fill="#4A525A">砾石滩、河漫滩既服务水文过程与物种栖息，也同时是市民夏日客厅。敏感与高强度使用通过段落</text>
+<text x="1306.6666666666667" y="330" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="13" fill="#4A525A">分工消化，而不是用同一套硬质做法覆盖全线。</text>
+<g filter="url(#p1_cardShadow)">
+  <rect x="48.0" y="613.0" width="901.0" height="379.0" rx="16" ry="16" fill="#FFFFFF"/>
+</g>
+<text x="76.0" y="649.0" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="13" fill="#8A929C">第四</text>
+<text x="76.0" y="681.0" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="22" font-weight="700" fill="#161616">滨水策划预留“试验空间”</text>
+<text x="76.0" y="713.0" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="13" fill="#4A525A">Eisbach 冲浪点本是工程调控的副产品，后被市民文化接管，说明伊萨尔河允许场景在使用中二次生长：工程条件先到位，业态与文化不必一次性填满。可</text>
+<text x="76.0" y="731.0" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="13" fill="#4A525A">逆、可试验，是其城市河岸保持活力的关键机制。</text>
+<g filter="url(#p1_cardShadow)">
+  <rect x="971.0" y="613.0" width="901.0" height="379.0" rx="16" ry="16" fill="#FFFFFF"/>
+</g>
+<text x="999.0" y="649.0" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="13" fill="#8A929C">第五</text>
+<text x="999.0" y="681.0" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="22" font-weight="700" fill="#161616">非正式社交优先于高端消费符号</text>
+<text x="999.0" y="713.0" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="13" fill="#4A525A">河边啤酒花园、轻食与可自带野餐的公共草坪，门槛低、停留长、复访率高；消费可以贴着河发生，但不以永久硬商业吞噬河岸公共属性。</text>
+<rect x="48" y="1016" width="1824" height="48" rx="12" ry="16" fill="#EFECE6"/>
+<text x="960" y="1046" text-anchor="middle" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="15" font-weight="600" fill="#161616">启示：滨水方法的核心是段落、近水、生态同构与可生长接口，而非抄一处造型。</text>
+
+</g></svg></div>
+</section>
+
+
+
+<section class="section" id="case3">
+  <div class="section-number">CASE 02 / KAMO RIVER · KYOTO</div><h2>京都 · 鸭川</h2>
+  <p class="lead">最值得学的是它处理文化地标与河岸关系的方式：克制、留白、可逆——不把岸线建满，把河留给日常。</p>
+  <div class="wide-media-box"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 4320 1920 1080"><g id="page-5" transform="translate(0,4320)">
+
+<defs>
+  <filter id="p4_softShadow" x="-8%" y="-8%" width="116%" height="120%" color-interpolation-filters="sRGB">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="3.5" result="b"/>
+    <feOffset dx="0" dy="2" result="o"/>
+    <feComponentTransfer in="o" result="s"><feFuncA type="linear" slope="0.12"/></feComponentTransfer>
+    <feMerge><feMergeNode in="s"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="p4_mapShadow" x="-3%" y="-3%" width="106%" height="106%" color-interpolation-filters="sRGB">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="8" result="b"/>
+    <feOffset dx="0" dy="4" result="o"/>
+    <feComponentTransfer in="o" result="s"><feFuncA type="linear" slope="0.14"/></feComponentTransfer>
+    <feMerge><feMergeNode in="s"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="p4_pillShadow" x="-25%" y="-35%" width="150%" height="180%" color-interpolation-filters="sRGB">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="2.5" result="b"/>
+    <feOffset dx="0" dy="1.5" result="o"/>
+    <feComponentTransfer in="o" result="s"><feFuncA type="linear" slope="0.30"/></feComponentTransfer>
+    <feMerge><feMergeNode in="s"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <clipPath id="p4_mapClip">
+    <rect x="784" y="36" width="1100" height="1008" rx="18" ry="18"/>
+  </clipPath>
+  <clipPath id="p4_wideClip"><rect x="40" y="314" width="692" height="277" rx="10" ry="10"/></clipPath>
+  <clipPath id="p4_s1Clip"><rect x="40" y="599" width="342" height="218" rx="10" ry="10"/></clipPath>
+  <clipPath id="p4_s2Clip"><rect x="40" y="825" width="342" height="218" rx="10" ry="10"/></clipPath>
+  <clipPath id="p4_tallClip"><rect x="390" y="599" width="342" height="445" rx="10" ry="10"/></clipPath>
+</defs>
+
+<rect width="1920" height="1080" fill="#F5F4F1"/>
+<rect x="16" y="16" width="752" height="1048" rx="20" ry="20"
+      fill="#FFFFFF" filter="url(#p4_softShadow)"/>
+
+<!-- title -->
+<text font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="15.5"><tspan x="40" y="118" fill="#3A4149">鸭川是京都的母亲河之一，城市段与市民日常生活高度重</tspan></text>
+<text font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="15.5"><tspan x="40" y="142" fill="#3A4149">叠。它最特殊的地方，不在于河道被做得多「精彩」</tspan></text>
+<text font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="15.5"><tspan x="40" y="166" fill="#3A4149">，而在于：一串重量级文化地标与河岸生活被步道轻轻串</tspan></text>
+<text font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="15.5"><tspan x="40" y="190" fill="#3A4149">联，河床与堤坡大量留白，设施克制，季节性内容可逆—</tspan></text>
+<text font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="15.5"><tspan x="40" y="214" fill="#3A4149">—国际游客来看文化，本地人仍把这里当</tspan><tspan fill="#C62828">最强的公共客厅</tspan></text>
+<text font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="15.5"><tspan x="40" y="238" fill="#3A4149">。北段鸭川三角洲可涉水坐石滩；下鸭、上贺茂以社丛贴</tspan></text>
+<text font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="15.5"><tspan x="40" y="262" fill="#3A4149">近河岸；哲学之道以窄而安静的散步道串联中小寺社；</tspan></text>
+<text font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="15.5"><tspan x="40" y="286" fill="#3A4149">三条至五条的堤坡与川床旺季搭建、淡季拆除。空间哲学</tspan></text>
+
+<image x="40" y="314" width="692" height="277"
+       xlink:href="assets/img-71.jpg" preserveAspectRatio="xMidYMid slice" clip-path="url(#p4_wideClip)"/>
+<image x="40" y="599" width="342" height="218"
+       xlink:href="assets/img-72.jpg" preserveAspectRatio="xMidYMid slice" clip-path="url(#p4_s1Clip)"/>
+<image x="40" y="825" width="342" height="218"
+       xlink:href="assets/img-73.jpg" preserveAspectRatio="xMidYMid slice" clip-path="url(#p4_s2Clip)"/>
+<image x="390" y="599" width="342" height="445"
+       xlink:href="assets/img-74.jpg" preserveAspectRatio="xMidYMid slice" clip-path="url(#p4_tallClip)"/>
+<text x="52" y="579" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">先斗町 · 河岸花街</text>
+<text x="50" y="807" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="11" font-weight="600" fill="#FFFFFF">鸭川三角洲</text>
+<text x="50" y="1033" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="11" font-weight="600" fill="#FFFFFF">下鸭神社社丛</text>
+<text x="400" y="1032" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">哲学之道</text>
+
+<rect x="780" y="32" width="1108" height="1016" rx="20" ry="20"
+      fill="#FFFFFF" filter="url(#p4_mapShadow)"/>
+<g clip-path="url(#p4_mapClip)">
+  <image x="784" y="36" width="1100" height="1008"
+         xlink:href="assets/img-75.jpg" preserveAspectRatio="xMidYMid slice"/>
+</g>
+<rect x="784" y="36" width="1100" height="1008" rx="18" ry="18"
+      fill="none" stroke="#E4E0D8" stroke-width="1.5"/>
+<line x1="1047.3" y1="414.9" x2="1077.3" y2="420.9" stroke="#3A8FD6" stroke-width="1.6"/>
+<circle cx="1077.3" cy="420.9" r="5.5" fill="#3A8FD6" stroke="#FFFFFF" stroke-width="1.8"/>
+<circle cx="1077.3" cy="420.9" r="2.2" fill="#FFFFFF"/>
+<rect x="877.3" y="390.9" width="170.0" height="48" rx="10" ry="10" fill="#FFFFFF" filter="url(#p4_pillShadow)"/>
+<rect x="877.3" y="390.9" width="170.0" height="48" rx="10" ry="10" fill="none" stroke="#E4E0D8" stroke-width="0.8"/>
+<circle cx="898.3" cy="414.9" r="11" fill="#3A8FD6"/>
+<text x="898.3" y="419.1" text-anchor="middle" font-family="'Noto Sans','Helvetica Neue',Arial,sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF">01</text>
+<text x="917.3" y="409.9" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="14.5" font-weight="700" fill="#161616">鸭川三角洲</text>
+<text x="917.3" y="427.9" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="11.5" fill="#5C6570">出町柳 · 涉水石滩</text>
+<line x1="1127.8" y1="229.6" x2="1101.8" y2="237.6" stroke="#C4A035" stroke-width="1.6"/>
+<circle cx="1101.8" cy="237.6" r="5.5" fill="#C4A035" stroke="#FFFFFF" stroke-width="1.8"/>
+<circle cx="1101.8" cy="237.6" r="2.2" fill="#FFFFFF"/>
+<rect x="1127.8" y="205.6" width="198.8" height="48" rx="10" ry="10" fill="#FFFFFF" filter="url(#p4_pillShadow)"/>
+<rect x="1127.8" y="205.6" width="198.8" height="48" rx="10" ry="10" fill="none" stroke="#E4E0D8" stroke-width="0.8"/>
+<circle cx="1148.8" cy="229.6" r="11" fill="#C4A035"/>
+<text x="1148.8" y="233.8" text-anchor="middle" font-family="'Noto Sans','Helvetica Neue',Arial,sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF">02</text>
+<text x="1167.8" y="224.6" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="14.5" font-weight="700" fill="#161616">下鸭 · 上贺茂神社</text>
+<text x="1167.8" y="242.6" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="11.5" fill="#5C6570">社丛与河岸渗透</text>
+<line x1="1686.0" y1="479.9" x2="1664.0" y2="475.9" stroke="#4E9B63" stroke-width="1.6"/>
+<circle cx="1664.0" cy="475.9" r="5.5" fill="#4E9B63" stroke="#FFFFFF" stroke-width="1.8"/>
+<circle cx="1664.0" cy="475.9" r="2.2" fill="#FFFFFF"/>
+<rect x="1686.0" y="455.9" width="155.2" height="48" rx="10" ry="10" fill="#FFFFFF" filter="url(#p4_pillShadow)"/>
+<rect x="1686.0" y="455.9" width="155.2" height="48" rx="10" ry="10" fill="none" stroke="#E4E0D8" stroke-width="0.8"/>
+<circle cx="1707.0" cy="479.9" r="11" fill="#4E9B63"/>
+<text x="1707.0" y="484.1" text-anchor="middle" font-family="'Noto Sans','Helvetica Neue',Arial,sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF">03</text>
+<text x="1726.0" y="474.9" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="14.5" font-weight="700" fill="#161616">哲学之道</text>
+<text x="1726.0" y="492.9" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="11.5" fill="#5C6570">窄而连续的散步道</text>
+<line x1="1024.9" y1="889.1" x2="1052.9" y2="879.1" stroke="#D4893A" stroke-width="1.6"/>
+<circle cx="1052.9" cy="879.1" r="5.5" fill="#D4893A" stroke="#FFFFFF" stroke-width="1.8"/>
+<circle cx="1052.9" cy="879.1" r="2.2" fill="#FFFFFF"/>
+<rect x="857.3" y="865.1" width="167.6" height="48" rx="10" ry="10" fill="#FFFFFF" filter="url(#p4_pillShadow)"/>
+<rect x="857.3" y="865.1" width="167.6" height="48" rx="10" ry="10" fill="none" stroke="#E4E0D8" stroke-width="0.8"/>
+<circle cx="878.3" cy="889.1" r="11" fill="#D4893A"/>
+<text x="878.3" y="893.3" text-anchor="middle" font-family="'Noto Sans','Helvetica Neue',Arial,sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF">04</text>
+<text x="897.3" y="884.1" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="14.5" font-weight="700" fill="#161616">先斗町 · 川床</text>
+<text x="897.3" y="902.1" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="11.5" fill="#5C6570">季节性可逆轻设施</text>
+<line x1="1089.1" y1="793.4" x2="1065.1" y2="787.4" stroke="#7B6BB0" stroke-width="1.6"/>
+<circle cx="1065.1" cy="787.4" r="5.5" fill="#7B6BB0" stroke="#FFFFFF" stroke-width="1.8"/>
+<circle cx="1065.1" cy="787.4" r="2.2" fill="#FFFFFF"/>
+<rect x="1089.1" y="769.4" width="165.2" height="48" rx="10" ry="10" fill="#FFFFFF" filter="url(#p4_pillShadow)"/>
+<rect x="1089.1" y="769.4" width="165.2" height="48" rx="10" ry="10" fill="none" stroke="#E4E0D8" stroke-width="0.8"/>
+<circle cx="1110.1" cy="793.4" r="11" fill="#7B6BB0"/>
+<text x="1110.1" y="797.6" text-anchor="middle" font-family="'Noto Sans','Helvetica Neue',Arial,sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF">05</text>
+<text x="1129.1" y="788.4" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="14.5" font-weight="700" fill="#161616">三条–五条堤坡</text>
+<text x="1129.1" y="806.4" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="11.5" fill="#5C6570">京都的客厅</text>
+
+<g id="p4_badge">
+  <rect x="1728" y="54" width="140" height="46" rx="10"
+        fill="#FFFFFF" filter="url(#p4_pillShadow)"/>
+  <text x="1798" y="73" text-anchor="middle"
+        font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="12" fill="#5C6570" letter-spacing="1.5">南沙河对标</text>
+  <text x="1798" y="91" text-anchor="middle"
+        font-family="'Noto Sans','Helvetica Neue',Arial,sans-serif" font-size="14" fill="#161616" font-weight="700">CASE 03 / 03</text>
+</g>
+<g id="p4_mapTitle">
+  <rect x="802" y="54" width="240" height="34" rx="10"
+        fill="#FFFFFF" filter="url(#p4_pillShadow)"/>
+  <text x="814" y="76" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="14" font-weight="600" fill="#161616">鸭川城市段 · 卫星标注图</text>
+</g>
+<text x="798" y="1062" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="11.5" fill="#8A929C">
+  底图 Esri World Imagery · 三角洲—神社—哲学之道—先斗町堤坡
+</text>
+
+</g></svg></div>
+  <div class="wide-media-box"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 5400 1920 1080"><g id="page-6" transform="translate(0,5400)">
+
+<defs>
+  <filter id="p5_cardShadow" x="-6%" y="-8%" width="112%" height="120%" color-interpolation-filters="sRGB">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="b"/>
+    <feOffset dx="0" dy="3" result="o"/>
+    <feComponentTransfer in="o" result="s"><feFuncA type="linear" slope="0.10"/></feComponentTransfer>
+    <feMerge><feMergeNode in="s"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+<rect width="1920" height="1080" fill="#F5F4F1"/>
+<text x="64" y="52" font-family="'Noto Sans','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="600" fill="#8A929C" letter-spacing="2.5">03 / KAMO · 借鉴总结</text>
+<text x="64" y="100" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="36" font-weight="700" fill="#161616">值得南沙河借鉴的总结</text>
+<text x="64" y="136" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="18" font-weight="600" fill="#3A4149">文化场域营造</text>
+<text x="64" y="170" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="15" fill="#3A4149">鸭川最值得被提炼的，是它在强文化符号旁边如何继续做“人的地方”——一套文化关系与留白伦理，而不只是河岸装饰手法。</text>
+<g filter="url(#p5_cardShadow)">
+  <rect x="48.0" y="212" width="593.3333333333334" height="379.0" rx="16" ry="16" fill="#FFFFFF"/>
+</g>
+<text x="76.0" y="248" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="13" fill="#8A929C">第一</text>
+<text x="76.0" y="280" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="22" font-weight="700" fill="#161616">文化借力而不吞河</text>
+<text x="76.0" y="312" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="13" fill="#4A525A">下鸭、上贺茂等世界遗产以社丛与森林贴近河岸，花街与寺社沿河分布，但河岸本身仍保持可穿越</text>
+<text x="76.0" y="330" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="13" fill="#4A525A">、可日常使用；文化引擎在侧，河岸生活不被围墙化或馆舍化。</text>
+<g filter="url(#p5_cardShadow)">
+  <rect x="663.3333333333334" y="212" width="593.3333333333334" height="379.0" rx="16" ry="16" fill="#FFFFFF"/>
+</g>
+<text x="691.3333333333334" y="248" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="13" fill="#8A929C">第二</text>
+<text x="691.3333333333334" y="280" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="22" font-weight="700" fill="#161616">国际级地标旁主动守松弛</text>
+<text x="691.3333333333334" y="312" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="13" fill="#4A525A">三条至五条堤坡被称为京都的客厅：人被允许坐下、吹风、自己找角落，秩序多来自自发惯例，而</text>
+<text x="691.3333333333334" y="330" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="13" fill="#4A525A">非密密麻麻的指定设施。强文化之后，河岸提供的是降噪与停留，而不是下一轮高强度打卡。</text>
+<g filter="url(#p5_cardShadow)">
+  <rect x="1278.6666666666667" y="212" width="593.3333333333334" height="379.0" rx="16" ry="16" fill="#FFFFFF"/>
+</g>
+<text x="1306.6666666666667" y="248" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="13" fill="#8A929C">第三</text>
+<text x="1306.6666666666667" y="280" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="22" font-weight="700" fill="#161616">设施与河岸的关系坚持可逆、轻量、季节性</text>
+<text x="1306.6666666666667" y="312" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="13" fill="#4A525A">纳凉床/川床旺季搭建、淡季拆除，消费依附季节与河风，却不永久侵占公共断面；踏脚石、斜坡</text>
+<text x="1306.6666666666667" y="330" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="13" fill="#4A525A">与树荫优先于固定大体量构筑。</text>
+<g filter="url(#p5_cardShadow)">
+  <rect x="48.0" y="613.0" width="901.0" height="379.0" rx="16" ry="16" fill="#FFFFFF"/>
+</g>
+<text x="76.0" y="649.0" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="13" fill="#8A929C">第四</text>
+<text x="76.0" y="681.0" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="22" font-weight="700" fill="#161616">用窄而连续的步道串联中小地标</text>
+<text x="76.0" y="713.0" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="13" fill="#4A525A">哲学之道证明：不必处处叠加超级节点，一条安静的体验型小路就能把寺社、日常店铺与散步习惯织成可感知的整体——连接本身即内容。</text>
+<g filter="url(#p5_cardShadow)">
+  <rect x="971.0" y="613.0" width="901.0" height="379.0" rx="16" ry="16" fill="#FFFFFF"/>
+</g>
+<text x="999.0" y="649.0" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="13" fill="#8A929C">第五</text>
+<text x="999.0" y="681.0" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="22" font-weight="700" fill="#161616">克制本身构成识别</text>
+<text x="999.0" y="713.0" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="13" fill="#4A525A">鸭川少靠滨水广告与屏幕建立品牌，识别来自人与河的稳定关系：文化很重，河岸很轻。</text>
+<rect x="48" y="1016" width="1824" height="48" rx="12" ry="16" fill="#EFECE6"/>
+<text x="960" y="1046" text-anchor="middle" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC','WenQuanYi Micro Hei',sans-serif" font-size="15" font-weight="600" fill="#161616">启示：强文化势能旁，留白与可逆往往比把岸线做满更接近长期经营的正确关系。</text>
+
+</g></svg></div>
+</section>
+
+<section class="divider" id="dv4">
+  <div class="eyebrow">BIG IDEA &amp; POSITIONING</div><h2 class="divider-title"><span class="dv-num">04 /</span>定位认知总结</h2>
+  <div class="dv-sub">海淀南沙河应该成为一个什么样的地方</div>
+</section>
+
+<section class="section" id="traits">
+  <div class="section-number">DEFINING TRAITS / 先认清这条河</div>
+  <h2>南沙河最重要的五个特质</h2>
+  <p class="lead">在谈定位之前，先把这条河本身看清楚——以下五个特质，是所有判断的基础。</p>
+  <div class="grid">
+    <div class="card" style="border-left:4px solid var(--deep)">
+      <div class="num">特质 01</div>
+      <h3>完整的全流域结构</h3>
+      <p>它不是一段被截取出来的城市河道：从西山源头，到支流系统，到主河道，再到最终汇流，整个空间过程相对完整。</p>
+    </div>
+    <div class="card" style="border-left:4px solid var(--river)">
+      <div class="num">特质 02</div>
+      <h3>山—河关系非常紧密</h3>
+      <p>南沙河与西山不是背景与前景的简单关系：源头、支流、村庄、寺庙、山前空间本就在一个连续的水文与地理网络里。“大西山—南沙河”不是“一横一纵”，而更像一个完整的山水网络。</p>
+    </div>
+    <div class="card" style="border-left:4px solid var(--green)">
+      <div class="num">特质 03</div>
+      <h3>国家级资源与原生乡野并置</h3>
+      <p>一边是故宫北院、国家级湿地，不远处又是村庄、稻田、农业与乡野空间——最高能级的国家文化资源与最日常的原生乡村生活，在很短的距离内同时存在。这个反差非常有辨识度。</p>
+    </div>
+    <div class="card" style="border-left:4px solid var(--rust)">
+      <div class="num">特质 04</div>
+      <h3>生态基底与创新实验并存</h3>
+      <p>沿线不是一张白纸：生态保护、农业、社区与主理人、文化、公共空间的实验已经持续发生。“创新性、实验性”不是未来硬加进去的，而是现状中本来就存在。</p>
+    </div>
+    <div class="card" style="border-left:4px solid var(--green2)">
+      <div class="num">特质 05</div>
+      <h3>从乡野到未来城市的连续切片</h3>
+      <p>沿着南沙河和它的支流，可以同时看到山、寺庙、村庄、稻田、湿地、公园、国家级文化设施与科创园区。它不像纯城市河，也不像纯自然河，更像一条能看见海淀不同发展阶段与不同生活世界并置的河流。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="idea">
+  <div class="wide-media-box" id="idea2"><svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <style>#idea2 .en{ font-family: "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif; }
+#idea2 .zh{ font-family: "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", sans-serif; }
+#idea2 .left-h{
+        font-family: "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+        color: #fff; font-size: 40px; font-weight: 700; line-height: 1.45; margin: 0;
+      }
+#idea2 .right-wrap{
+        font-family: "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+        color: #fff; text-align: center; height: 100%;
+        display: flex; flex-direction: column; justify-content: center; align-items: center;
+        box-sizing: border-box; padding: 24px 36px;
+      }
+#idea2 .right-body{ font-size: 21px; line-height: 1.7; margin: 0 0 22px 0; font-weight: 400; opacity: 0.95; }
+#idea2 .lead{ font-size: 14px; letter-spacing: 2px; opacity: 0.55; margin: 0 0 10px 0; font-weight: 500; }
+#idea2 .list{ list-style: none; margin: 0; padding: 0; text-align: center; }
+#idea2 .list li{ font-size: 17px; line-height: 1.75; opacity: 0.88; font-weight: 400; }
+#idea2 .list li span{ opacity: 0.45; margin-right: 8px; }</style>
+  </defs>
+  <rect width="1920" height="1080" fill="#F7F5F0"/>
+
+  <text x="80" y="72" class="en" fill="#7A847E" font-size="17" letter-spacing="2.5" font-weight="500">01 / POSITION</text>
+  <text x="80" y="140" class="zh" fill="#1A1F1C" font-size="48" font-weight="700" letter-spacing="1">它是一个海淀生活的后花园</text>
+
+  <!-- hero -->
+  <rect x="80" y="188" width="1760" height="650" rx="24" fill="#274F59"/>
+
+  <!-- left headline -->
+  <foreignObject x="120" y="240" width="520" height="520">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="height:100%;display:flex;flex-direction:column;justify-content:center;">
+      <div class="left-h">南沙河不是“城市客厅”，而是海淀生活的“后花园”。</div>
+      <div style="width:72px;height:2px;background:rgba(255,255,255,0.3);margin-top:28px;"></div>
+    </div>
+  </foreignObject>
+
+  <!-- divider -->
+  <line x1="680" y1="250" x2="680" y2="770" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1"/>
+
+  <!-- right body centered -->
+  <foreignObject x="700" y="210" width="1080" height="600">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="right-wrap">
+      <p class="right-body">南沙河不是展示城市形象的「客厅」，而是海淀人下班之后、周末之后能回来的地方：近水、松弛、低干预，把山前乡野、稻田湿地和日常闲适接回生活半径。它承接的是「想去那里待着」，不是打卡热闹。</p>
+      <p class="lead">对照 · 北京其他滨水</p>
+      <ul class="list">
+        <li><span>·</span>亮马河，朝阳的国际交往消费水岸</li>
+        <li><span>·</span>永定河，大兴的文化生活活力水岸</li>
+        <li><span>·</span>大运河，通州的文化中心运河</li>
+        <li><span>·</span>凉水河，丰台的复兴城市会客厅</li>
+        <li><span>·</span>什刹海，西城老北京胡同文化水岸</li>
+        <li><span>·</span>通惠河，东城朝阳的CBD 商务滨水水岸</li>
+      </ul>
+    </div>
+  </foreignObject>
+
+  <!-- brand -->
+  <rect x="80" y="880" width="1760" height="120" rx="18" fill="#FFFFFF" stroke="#D8DFD9" stroke-width="1.5"/>
+  <text x="130" y="930" class="zh" fill="#6B7670" font-size="17" font-weight="500">一句话品牌定位</text>
+  <text x="130" y="978" class="zh" fill="#1A1F1C" font-size="34" font-weight="700" letter-spacing="1">最不卷的城市绿湾</text>
+  <text x="920" y="968" class="zh" fill="#8A948E" font-size="16">备选 · 城里最近的松弛绿湾　/　海淀人自己的近水绿湾</text>
+</svg></div>
+  <div class="wide-media-box" id="idea3"><svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <style>#idea3 .en{ font-family: "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif; }
+#idea3 .zh{ font-family: "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", sans-serif; }
+#idea3 .left-h{
+        font-family: "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+        color: #fff; font-size: 40px; font-weight: 700; line-height: 1.45; margin: 0;
+      }
+#idea3 .right-wrap{
+        font-family: "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+        color: #fff; text-align: center; height: 100%;
+        display: flex; flex-direction: column; justify-content: center; align-items: center;
+        box-sizing: border-box; padding: 24px 36px;
+      }
+#idea3 .right-body{ font-size: 21px; line-height: 1.7; margin: 0 0 22px 0; font-weight: 400; opacity: 0.95; }
+#idea3 .lead{ font-size: 14px; letter-spacing: 2px; opacity: 0.55; margin: 0 0 10px 0; font-weight: 500; }
+#idea3 .list{ list-style: none; margin: 0; padding: 0; text-align: center; }
+#idea3 .list li{ font-size: 17px; line-height: 1.8; opacity: 0.88; font-weight: 400; }
+#idea3 .list li span{ opacity: 0.45; margin-right: 8px; }
+#idea3 .note{ font-family: "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", sans-serif; color: #4A5550; font-size: 15px; line-height: 1.55; margin: 0; }</style>
+  </defs>
+  <rect width="1920" height="1080" fill="#F7F5F0"/>
+
+  <text x="80" y="72" class="en" fill="#7A847E" font-size="17" letter-spacing="2.5" font-weight="500">02 / HYPOTHESIS</text>
+  <text x="80" y="140" class="zh" fill="#1A1F1C" font-size="48" font-weight="700" letter-spacing="1">它是一条创新生活实验河</text>
+
+  <rect x="80" y="188" width="1760" height="620" rx="24" fill="#274F59"/>
+
+  <foreignObject x="120" y="230" width="520" height="520">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="height:100%;display:flex;flex-direction:column;justify-content:center;">
+      <div class="left-h">「海淀性」不在科技装置，而在实验性</div>
+      <div style="width:72px;height:2px;background:rgba(255,255,255,0.3);margin-top:28px;"></div>
+    </div>
+  </foreignObject>
+
+  <line x1="680" y1="240" x2="680" y2="740" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1"/>
+
+  <foreignObject x="700" y="210" width="1080" height="570">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="right-wrap">
+      <p class="right-body">海淀的特点是科技，海淀的精神是创新；但「海淀性」不必落在河边堆机器人、无人船、科技屏幕。南沙河沿线已有智慧农业、社区农业、主理人花园、湿地保护等非标实践——真正该放大的，是持续试验新自然、新农业、新生活、新文化与新运营的能力。科技感因此更有内涵，也更贴现场。</p>
+      <p class="lead">海淀创新脉络</p>
+      <ul class="list">
+        <li><span>·</span>三山五园，清代皇家园林的文化试验</li>
+        <li><span>·</span>京张铁路，中国人的第一条创新铁路</li>
+        <li><span>·</span>中关村，中国民营科技的创新发源地</li>
+        <li><span>·</span>中关村科学城，中国科技创新的核心区</li>
+      </ul>
+    </div>
+  </foreignObject>
+
+  <!-- brand + note -->
+  <rect x="80" y="848" width="900" height="140" rx="18" fill="#FFFFFF" stroke="#D8DFD9" stroke-width="1.5"/>
+  <text x="130" y="900" class="zh" fill="#6B7670" font-size="16" font-weight="500">一句话品牌定位</text>
+  <text x="130" y="952" class="zh" fill="#1A1F1C" font-size="30" font-weight="700">最日常的生活创新湾</text>
+
+  <rect x="1010" y="848" width="830" height="140" rx="18" fill="#EEF1EE"/>
+  <rect x="1010" y="848" width="6" height="140" rx="3" fill="#5D94A3"/>
+  <foreignObject x="1040" y="870" width="780" height="110">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+      对内可用「城市生活实验河」作选项目标准（优先小、非标、可试错）；对外偏「日常可感」。游客为「想去那里待着」而来，不为「实验」而来。
+    </div>
+  </foreignObject>
+</svg></div>
+  <div class="wide-media-box" id="idea4"><svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <style>#idea4 .en{ font-family: "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif; }
+#idea4 .zh{ font-family: "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", sans-serif; }
+#idea4 .left-h{
+        font-family: "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+        color: #fff; font-size: 36px; font-weight: 700; line-height: 1.5; margin: 0;
+      }
+#idea4 .right-wrap{
+        font-family: "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+        color: #fff; text-align: center; height: 100%;
+        display: flex; flex-direction: column; justify-content: center; align-items: center;
+        box-sizing: border-box; padding: 20px 32px;
+      }
+#idea4 .right-body{ font-size: 20px; line-height: 1.68; margin: 0 0 18px 0; font-weight: 400; opacity: 0.95; }
+#idea4 .lead{ font-size: 14px; letter-spacing: 2px; opacity: 0.55; margin: 0 0 8px 0; font-weight: 500; }
+#idea4 .list{ list-style: none; margin: 0; padding: 0; text-align: center; }
+#idea4 .list li{ font-size: 16px; line-height: 1.75; opacity: 0.88; font-weight: 400; }
+#idea4 .list li span{ opacity: 0.45; margin-right: 8px; }
+#idea4 .cardt{ font-family: "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", sans-serif; color: #1A1F1C; font-size: 17px; font-weight: 700; margin: 0 0 6px 0; }
+#idea4 .cardb{ font-family: "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", sans-serif; color: #4A5550; font-size: 15px; line-height: 1.5; margin: 0; }</style>
+  </defs>
+  <rect width="1920" height="1080" fill="#F7F5F0"/>
+
+  <text x="80" y="68" class="en" fill="#7A847E" font-size="16" letter-spacing="2.5" font-weight="500">03 / INSIGHT</text>
+  <text x="80" y="128" class="zh" fill="#1A1F1C" font-size="44" font-weight="700" letter-spacing="1">它是海淀生活的另一面</text>
+
+  <rect x="80" y="168" width="1760" height="520" rx="24" fill="#274F59"/>
+
+  <foreignObject x="120" y="200" width="520" height="450">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="height:100%;display:flex;flex-direction:column;justify-content:center;">
+      <div class="left-h">南沙河不只是高脑力的海淀，更是探索海淀未来生活方式的地方。</div>
+      <div style="width:72px;height:2px;background:rgba(255,255,255,0.3);margin-top:24px;"></div>
+      <div style="color:rgba(255,255,255,0.65);font-size:18px;margin-top:18px;font-family:'Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif;">快思考，慢生活</div>
+    </div>
+  </foreignObject>
+
+  <line x1="680" y1="210" x2="680" y2="640" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1"/>
+
+  <foreignObject x="700" y="185" width="1080" height="480">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="right-wrap">
+      <p class="right-body">提到海淀，人们想到 AI、科研、中关村与高强度脑力输出；但这片土地更古老的底色，是园林、校园、稻田和西山脚下的闲适。南沙河承接的是后一半：书卷、田野、步行骑行、手作自足、低饱和审美。它不是逃离海淀，而是让海淀拥有一种自己的、可以过的生活方式——探索海淀未来怎么生活。</p>
+      <p class="lead">对照 · 周边科创聚落</p>
+      <ul class="list">
+        <li><span>·</span>华为科技园，全球领先的智能科技先锋</li>
+        <li><span>·</span>腾讯总部，中国北方的超级总部</li>
+        <li><span>·</span>百度软件园，中国搜索引擎与 AI 巨头</li>
+        <li><span>·</span>龙芯中科科技园，国产自主 CPU 芯片先锋</li>
+      </ul>
+    </div>
+  </foreignObject>
+
+  <!-- compare chips -->
+  <rect x="80" y="716" width="860" height="88" rx="14" fill="#EEF1EE"/>
+  <foreignObject x="110" y="732" width="800" height="60">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p class="cardt">大家熟知的海淀：快脑</p>
+      <p class="cardb">AI · 科研 · 中关村 · 高强度思考与产出</p>
+    </div>
+  </foreignObject>
+  <rect x="980" y="716" width="860" height="88" rx="14" fill="#EEF1EE"/>
+  <foreignObject x="1010" y="732" width="800" height="60">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p class="cardt">南沙河承接的海淀：慢日子</p>
+      <p class="cardb">书卷 · 田野 · 步行骑行 · 手作自足 · 低饱和审美</p>
+    </div>
+  </foreignObject>
+
+  <!-- brand -->
+  <rect x="80" y="832" width="1760" height="160" rx="18" fill="#FFFFFF" stroke="#D8DFD9" stroke-width="1.5"/>
+  <text x="130" y="892" class="zh" fill="#6B7670" font-size="16" font-weight="500">一句话品牌定位</text>
+  <text x="130" y="950" class="zh" fill="#1A1F1C" font-size="36" font-weight="700" letter-spacing="2">快思考，慢生活</text>
+  <text x="900" y="940" class="zh" fill="#8A948E" font-size="17">备选 · 脑子转得快，日子过得慢</text>
+</svg></div>
+  <div class="wide-media-box" id="idea5"><svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <style>#idea5 .en{ font-family: "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif; }
+#idea5 .zh{ font-family: "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", sans-serif; }</style>
+  </defs>
+  <rect width="1920" height="1080" fill="#F7F5F0"/>
+
+  <text x="80" y="72" class="en" fill="#7A847E" font-size="17" letter-spacing="2.5" font-weight="500">04 / BRAND LINES</text>
+  <text x="80" y="136" class="zh" fill="#1A1F1C" font-size="48" font-weight="700">品牌定位选项</text>
+  <text x="80" y="186" class="zh" fill="#6B7670" font-size="20">供讨论筛选，含主推与延伸</text>
+
+  <!-- Group A label -->
+  <text x="80" y="250" class="zh" fill="#274F59" font-size="18" font-weight="700" letter-spacing="1">A · 主推三句</text>
+
+  <!-- Main push cards -->
+  <rect x="80" y="270" width="560" height="130" rx="20" fill="#274F59"/>
+  <text x="110" y="310" class="zh" fill="#A8B5AE" font-size="14" font-weight="500">01 · 后花园</text>
+  <text x="110" y="360" class="zh" fill="#FFFFFF" font-size="28" font-weight="700">最不卷的城市绿湾</text>
+
+  <rect x="680" y="270" width="560" height="130" rx="20" fill="#274F59"/>
+  <text x="710" y="310" class="zh" fill="#A8B5AE" font-size="14" font-weight="500">02 · 实验河</text>
+  <text x="710" y="360" class="zh" fill="#FFFFFF" font-size="28" font-weight="700">最日常的生活创新湾</text>
+
+  <rect x="1280" y="270" width="560" height="130" rx="20" fill="#274F59"/>
+  <text x="1310" y="310" class="zh" fill="#A8B5AE" font-size="14" font-weight="500">03 · 另一面</text>
+  <text x="1310" y="360" class="zh" fill="#FFFFFF" font-size="28" font-weight="700">快思考，慢生活</text>
+
+  <!-- Group B -->
+  <text x="80" y="460" class="zh" fill="#274F59" font-size="18" font-weight="700" letter-spacing="1">B · 备选 / 延伸</text>
+
+  <!-- row 1 pills -->
+  <g class="zh" font-size="18" font-weight="500">
+    <rect x="80" y="485" width="280" height="56" rx="28" fill="#FFFFFF" stroke="#D0D8D2" stroke-width="1.5"/>
+    <text x="220" y="520" fill="#2A3330" text-anchor="middle">城里最近的松弛绿湾</text>
+
+    <rect x="380" y="485" width="320" height="56" rx="28" fill="#FFFFFF" stroke="#D0D8D2" stroke-width="1.5"/>
+    <text x="540" y="520" fill="#2A3330" text-anchor="middle">海淀人自己的近水绿湾</text>
+
+    <rect x="720" y="485" width="280" height="56" rx="28" fill="#FFFFFF" stroke="#D0D8D2" stroke-width="1.5"/>
+    <text x="860" y="520" fill="#2A3330" text-anchor="middle">可试错的日常创新河</text>
+
+    <rect x="1020" y="485" width="320" height="56" rx="28" fill="#FFFFFF" stroke="#D0D8D2" stroke-width="1.5"/>
+    <text x="1180" y="520" fill="#2A3330" text-anchor="middle">把创新活进日常的河湾</text>
+
+    <rect x="1360" y="485" width="280" height="56" rx="28" fill="#FFFFFF" stroke="#D0D8D2" stroke-width="1.5"/>
+    <text x="1500" y="520" fill="#2A3330" text-anchor="middle">试生活，慢河原</text>
+  </g>
+
+  <!-- row 2 pills -->
+  <g class="zh" font-size="18" font-weight="500">
+    <rect x="80" y="560" width="400" height="56" rx="28" fill="#FFFFFF" stroke="#D0D8D2" stroke-width="1.5"/>
+    <text x="280" y="595" fill="#2A3330" text-anchor="middle">脑子转得快，日子过得慢</text>
+
+    <rect x="500" y="560" width="400" height="56" rx="28" fill="#FFFFFF" stroke="#D0D8D2" stroke-width="1.5"/>
+    <text x="700" y="595" fill="#2A3330" text-anchor="middle">快脑海淀的慢日子河湾</text>
+
+    <rect x="920" y="560" width="400" height="56" rx="28" fill="#FFFFFF" stroke="#D0D8D2" stroke-width="1.5"/>
+    <text x="1120" y="595" fill="#2A3330" text-anchor="middle">向河而创，向慢而行</text>
+
+    <rect x="1340" y="560" width="500" height="56" rx="28" fill="#FFFFFF" stroke="#D0D8D2" stroke-width="1.5"/>
+    <text x="1590" y="595" fill="#2A3330" text-anchor="middle">实验敬生活，烟波安身心</text>
+  </g>
+
+  <!-- Group C -->
+  <text x="80" y="690" class="zh" fill="#274F59" font-size="18" font-weight="700" letter-spacing="1">C · 三句并读（可选叠用）</text>
+  <rect x="80" y="715" width="1760" height="120" rx="20" fill="#EEF1EE"/>
+  <text x="120" y="790" class="zh" fill="#1A1F1C" font-size="30" font-weight="600" letter-spacing="1">最不卷的城市绿湾　·　最日常的生活创新湾　·　快思考，慢生活</text>
+
+  <!-- legend -->
+  <rect x="80" y="880" width="18" height="18" rx="4" fill="#274F59"/>
+  <text x="112" y="895" class="zh" fill="#6B7670" font-size="15">主推</text>
+  <rect x="180" y="880" width="18" height="18" rx="9" fill="#FFFFFF" stroke="#D0D8D2" stroke-width="1.5"/>
+  <text x="212" y="895" class="zh" fill="#6B7670" font-size="15">备选 / 延伸</text>
+  <text x="80" y="980" class="zh" fill="#9AA39D" font-size="14">南沙河 BIG IDEA · 品牌定位讨论稿</text>
+</svg></div>
+</section>
+
+<footer class="footer"><span>认识南沙河｜前期认识与策划线索</span><span>TEKUMA · 2026.09</span></footer>
+</div>
+<script>
+(function(){
+  function isFS(){return !!(document.fullscreenElement||document.webkitFullscreenElement);}
+  function reqFS(el){var p=el.requestFullscreen?el.requestFullscreen():el.webkitRequestFullscreen&&el.webkitRequestFullscreen();if(p&&p.catch)p.catch(function(){});}
+  function exitFS(){if(document.exitFullscreen)document.exitFullscreen();else if(document.webkitExitFullscreen)document.webkitExitFullscreen();}
+  function toggle(el){if(isFS())exitFS();else reqFS(el||document.documentElement);}
+  var navBtn=document.getElementById('fsbtn');
+  if(navBtn)navBtn.addEventListener('click',function(){toggle();});
+  document.addEventListener('keydown',function(e){
+    if((e.key==='f'||e.key==='F')&&!e.metaKey&&!e.ctrlKey&&!e.altKey){
+      var t=e.target;
+      if(t&&(t.tagName==='INPUT'||t.tagName==='TEXTAREA'||t.tagName==='SELECT'||t.isContentEditable))return;
+      toggle();
+    }
+  });
+  function syncLabel(){
+    var on=isFS();
+    if(navBtn)navBtn.textContent=on?'⛶ 退出全屏':'⛶ 全屏';
+  }
+  document.addEventListener('fullscreenchange',syncLabel);
+  document.addEventListener('webkitfullscreenchange',syncLabel);
+})();
+</script>
+<script>
+(function(){
+  var nav=document.querySelector('.nav');
+  if(!nav)return;
+  function vis(){ if(window.scrollY<80){nav.classList.remove('nh');} else {nav.classList.add('nh');} }
+  window.addEventListener('scroll',vis,{passive:true});
+  document.addEventListener('mousemove',function(e){ if(e.clientY<60){nav.classList.remove('nh');} else {vis();} });
+  vis();
+})();
+</script>
+<script>
+(function(){
+  function pages(){
+    var list=[];
+    var hero=document.querySelector('.hero'); if(hero)list.push(hero);
+    document.querySelectorAll('.shell > section').forEach(function(s){
+      if(s.id==='idea'){ s.querySelectorAll('.wide-media-box').forEach(function(b){list.push(b)}); }
+      else list.push(s);
+    });
+    return list;
+  }
+  document.addEventListener('keydown',function(e){
+    if(e.key!=='ArrowRight'&&e.key!=='ArrowLeft')return;
+    var ps=pages(); if(!ps.length)return;
+    var y=window.scrollY+window.innerHeight*0.35, idx=0;
+    ps.forEach(function(p,i){ if(p.getBoundingClientRect().top+window.scrollY < y) idx=i; });
+    idx += (e.key==='ArrowRight'?1:-1);
+    if(idx<0||idx>=ps.length)return;
+    e.preventDefault();
+    ps[idx].scrollIntoView({behavior:'smooth',block:'start'});
+  });
+})();
+</script>
+<div id="kbhint">键盘 ← → 翻页</div>
+<div id="prog"></div>
+<script>(function(){var b=document.getElementById("prog");function f(){var h=document.documentElement;var m=h.scrollHeight-h.clientHeight;var p=m>0?(h.scrollTop||document.body.scrollTop)/m:0;b.style.width=(p*100).toFixed(2)+"%"}addEventListener("scroll",f,{passive:true});addEventListener("resize",f);f()})();</script>
+</body>
+</html>
